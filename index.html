@@ -3,12 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>JAMNA | Interactive Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div id="bg-canvas"></div>
+  
+  <nav-bar></nav-bar>
+
+  <main>
+    <section class="hero">
+      <h1>The Future of Web is Here</h1>
+      <p>A high-performance, immersive experience built with modern web standards. No frameworks, just pure speed and aesthetics.</p>
+      <div class="cta">
+        <button class="btn-primary">Explore Now</button>
+      </div>
+    </section>
+
+    <div class="dashboard-grid">
+      <glass-card title="Modularity">
+        <p>Built with native Web Components for maximum encapsulation and reusability across the platform.</p>
+      </glass-card>
+      
+      <glass-card title="Performance">
+        <p>Leveraging Baseline features like OKLCH, Container Queries, and :has() for a lightweight, fast-loading experience.</p>
+      </glass-card>
+      
+      <glass-card title="Immersion">
+        <p>Integrating Three.js for interactive 3D graphics that respond to user presence and interaction.</p>
+      </glass-card>
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
 </body>
 </html>

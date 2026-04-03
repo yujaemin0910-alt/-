@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="최신 IT 트렌드, 테크 뉴스, 가젯 리뷰를 누구보다 빠르게! TechPop에서 쉽고 재미있게 만나보세요." />
+  <meta name="keywords" content="IT뉴스, 테크리뷰, 스마트폰, AI, 가젯, 앱추천" />
+  <meta name="author" content="TechPop" />
+  <title>TechPop 🚀 — IT & 테크 뉴스, 리뷰, 트렌드</title>
+
+  <!-- Google AdSense -->
+  <!-- ✅ 아래 ca-pub-XXXXXXXXXX 를 본인의 애드센스 퍼블리셔 ID로 교체하세요 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:    #FF5722;
+      --primary-lt: #FF8A65;
+      --primary-bg: #FFF3EF;
+      --accent:     #00BCD4;
+      --accent-lt:  #E0F7FA;
+      --dark:       #1A1A2E;
+      --mid:        #4A4A6A;
+      --muted:      #9090B0;
+      --border:     #EEEEF5;
+      --bg:         #F8F8FC;
+      --white:      #FFFFFF;
+      --card-shadow: 0 2px 16px rgba(26,26,46,0.07);
+      --card-hover:  0 8px 32px rgba(26,26,46,0.13);
+      --radius:     14px;
+      --radius-sm:  8px;
+      --font-main:  'Noto Sans KR', sans-serif;
+      --font-logo:  'Space Grotesk', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: var(--white);
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(26,26,46,0.06);
+    }
+    .header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+    }
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--primary); }
+    .logo em {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 5px;
+      padding: 1px 6px;
+      font-style: normal;
+      font-size: 0.75rem;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+
+    .main-nav { display: flex; gap: 4px; }
+    .main-nav a {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--mid);
+      transition: all 0.2s;
+    }
+    .main-nav a:hover,
+    .main-nav a.active {
+      background: var(--primary-bg);
+      color: var(--primary);
+    }
+
+    .header-search {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: 22px;
+      padding: 6px 14px;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .header-search:hover { border-color: var(--primary); }
+
+    /* ===== TOP BANNER AD ===== */
+    .ad-leaderboard {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .ad-leaderboard-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Ad placeholder styles (실제 광고가 없을 때 보이는 UI) */
+    .ad-slot {
+      background: linear-gradient(135deg, #f0f0f8 0%, #e8e8f0 100%);
+      border: 1.5px dashed #CCCCDD;
+      border-radius: var(--radius-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.78rem;
+      gap: 4px;
+    }
+    .ad-slot-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #AAAACC;
+    }
+
+    /* ===== HERO / BREAKING NEWS ===== */
+    .breaking-bar {
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 0;
+      overflow: hidden;
+    }
+    .breaking-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.84rem;
+    }
+    .breaking-badge {
+      background: #fff;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .breaking-ticker {
+      display: flex;
+      gap: 32px;
+      animation: ticker 28s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .breaking-ticker span::before { content: "▶ "; font-size: 0.7rem; }
+
+    /* ===== MAIN LAYOUT ===== */
+    .main-wrapper {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 32px;
+    }
+
+    /* ===== SECTION HEADING ===== */
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 20px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+    .see-all {
+      font-size: 0.82rem;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 4px 12px;
+      border: 1.5px solid var(--primary);
+      border-radius: 15px;
+      transition: all 0.2s;
+    }
+    .see-all:hover { background: var(--primary); color: #fff; }
+
+    /* ===== HERO CARD ===== */
+    .hero-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 260px;
+      transition: box-shadow 0.25s;
+      cursor: pointer;
+    }
+    .hero-card:hover { box-shadow: var(--card-hover); }
+    .hero-thumb {
+      background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 70%, rgba(255,87,34,0.3), transparent 60%);
+    }
+    .hero-body {
+      padding: 28px 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    .tag-ai   { background: var(--accent-lt); color: var(--accent); }
+    .tag-phone { background: #E8F5E9; color: #2E7D32; }
+    .tag-tip  { background: #FFF9C4; color: #F57F17; }
+    .tag-sec  { background: #FCE4EC; color: #C62828; }
+    .tag-app  { background: #EDE7F6; color: #4527A0; }
+    .tag-hw   { background: #E3F2FD; color: #1565C0; }
+
+    .hero-body h2 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      line-height: 1.4;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .hero-body p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .card-meta .dot { opacity: 0.4; }
+
+    /* ===== ARTICLE GRID ===== */
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    .article-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .article-card:hover {
+      box-shadow: var(--card-hover);
+      transform: translateY(-3px);
+    }
+    .article-thumb {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .article-thumb.t1 { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .article-thumb.t2 { background: linear-gradient(135deg, #f093fb, #f5576c); }
+    .article-thumb.t3 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+    .article-thumb.t4 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+    .article-thumb.t5 { background: linear-gradient(135deg, #fa709a, #fee140); }
+    .article-thumb.t6 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+    .article-body { padding: 16px; }
+    .article-body h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.45;
+      margin: 8px 0 6px;
+      color: var(--dark);
+    }
+    .article-body p {
+      font-size: 0.82rem;
+      color: var(--mid);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* IN-CONTENT AD */
+    .ad-in-content {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 12px;
+      margin-bottom: 28px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ===== LIST ARTICLES ===== */
+    .article-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .list-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .list-card:hover {
+      box-shadow: var(--card-hover);
+      transform: translateX(4px);
+    }
+    .list-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+    .list-thumb.l1 { background: linear-gradient(135deg, #FF5722, #FF8A65); }
+    .list-thumb.l2 { background: linear-gradient(135deg, #3F51B5, #7986CB); }
+    .list-thumb.l3 { background: linear-gradient(135deg, #009688, #4DB6AC); }
+    .list-thumb.l4 { background: linear-gradient(135deg, #795548, #A1887F); }
+    .list-body { flex: 1; }
+    .list-body h3 {
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.45;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+    .list-body p {
+      font-size: 0.81rem;
+      color: var(--mid);
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .list-meta { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar { display: flex; flex-direction: column; gap: 22px; }
+
+    .sidebar-widget {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--card-shadow);
+    }
+    .widget-title {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .widget-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    /* Sidebar ad */
+    .sidebar-ad {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 10px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Popular list */
+    .popular-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .popular-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      cursor: pointer;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .popular-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .popular-num {
+      font-family: var(--font-logo);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--border);
+      line-height: 1;
+      width: 28px;
+      flex-shrink: 0;
+    }
+    .popular-item:nth-child(1) .popular-num { color: var(--primary); }
+    .popular-item:nth-child(2) .popular-num { color: var(--primary-lt); }
+    .popular-item:nth-child(3) .popular-num { color: #FFB74D; }
+    .popular-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--dark);
+      line-height: 1.45;
+    }
+    .popular-text small { display: block; font-weight: 400; color: var(--muted); font-size: 0.77rem; margin-top: 2px; }
+
+    /* Category chips */
+    .category-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      padding: 5px 13px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chip:hover { filter: brightness(0.9); transform: scale(1.04); }
+    .chip-ai   { background: var(--accent-lt); color: var(--accent); }
+    .chip-ph   { background: #E8F5E9; color: #2E7D32; }
+    .chip-pc   { background: #E3F2FD; color: #1565C0; }
+    .chip-sec  { background: #FCE4EC; color: #C62828; }
+    .chip-app  { background: #EDE7F6; color: #4527A0; }
+    .chip-tip  { background: #FFF9C4; color: #F57F17; }
+    .chip-ev   { background: #F3E5F5; color: #6A1B9A; }
+    .chip-iot  { background: var(--primary-bg); color: var(--primary); }
+
+    /* Newsletter widget */
+    .newsletter-form { display: flex; flex-direction: column; gap: 10px; }
+    .newsletter-form input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-main);
+      font-size: 0.85rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .newsletter-form input:focus { border-color: var(--primary); }
+    .newsletter-form button {
+      width: 100%;
+      padding: 10px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-main);
+      font-size: 0.87rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .newsletter-form button:hover { background: #E64A19; }
+    .newsletter-note { font-size: 0.75rem; color: var(--muted); text-align: center; }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--dark);
+      color: #aaa;
+      margin-top: 40px;
+    }
+    .footer-ad {
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 36px 20px 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-logo {
+      font-family: var(--font-logo);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .footer-logo span { color: var(--primary); }
+    .footer-desc { font-size: 0.83rem; line-height: 1.7; margin-bottom: 16px; }
+    .footer-col h4 { color: #ddd; font-size: 0.88rem; font-weight: 700; margin-bottom: 12px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col li a { font-size: 0.82rem; color: #888; transition: color 0.2s; }
+    .footer-col li a:hover { color: var(--primary); }
+    .footer-bottom {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+    }
+    .social-links { display: flex; gap: 10px; }
+    .social-btn {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .social-btn:hover { background: var(--primary); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .main-wrapper { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .hero-card { grid-template-columns: 1fr; }
+      .hero-thumb { height: 200px; }
+      .footer-main { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .article-grid { grid-template-columns: 1fr; }
+      .main-nav { display: none; }
+      .footer-main { grid-template-columns: 1fr; }
+      .breaking-bar { display: none; }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-card      { animation: fadeUp 0.5s ease 0.1s both; }
+    .article-grid   { animation: fadeUp 0.5s ease 0.2s both; }
+    .article-list   { animation: fadeUp 0.5s ease 0.3s both; }
+    .sidebar        { animation: fadeUp 0.5s ease 0.15s both; }
+
+    /* Read more link */
+    .read-more {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .read-more::after { content: "→"; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">Tech<span>Pop</span><em>BETA</em></a>
+      <nav class="main-nav">
+        <a href="#" class="active">전체</a>
+        <a href="#">AI/ML</a>
+        <a href="#">스마트폰</a>
+        <a href="#">PC/하드웨어</a>
+        <a href="#">앱 리뷰</a>
+        <a href="#">보안</a>
+        <a href="#">꿀팁</a>
+      </nav>
+      <div class="header-search">🔍 검색...</div>
+    </div>
+  </header>
+
+  <!-- ===== TOP LEADERBOARD AD ===== -->
+  <!-- ✅ 광고 배치 위치 1: 헤더 하단 배너 (728x90 or 반응형) -->
+  <div class="ad-leaderboard">
+    <div class="ad-leaderboard-inner">
+      <ins class="adsbygoogle"
+           style="display:block;width:728px;height:90px;"
+           data-ad-client="ca-pub-XXXXXXXXXX"
+           data-ad-slot="YYYYYYYYYY"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <!--
+        [개발 중 미리보기용 더미 - 실제 광고 승인 후 자동으로 광고가 표시됩니다]
+        아래 div는 개발 확인용입니다. 실제 배포 시 삭제하세요.
+      -->
+    </div>
+  </div>
+
+  <!-- ===== BREAKING NEWS TICKER ===== -->
+  <div class="breaking-bar">
+    <div class="breaking-inner">
+      <span class="breaking-badge">🔥 속보</span>
+      <div class="breaking-ticker">
+        <span>애플, 아이폰 17 시리즈 9월 공개 예고... 폴더블 모델도 함께 출시?</span>
+        <span>삼성 갤럭시 AI 2.0 업데이트 글로벌 배포 시작</span>
+        <span>오픈AI, GPT-5 출시 임박... 멀티모달 성능 대폭 향상</span>
+        <span>구글 픽셀 10 유출 사진 등장, 새로운 카메라 디자인 눈길</span>
+        <span>국내 인터넷 속도 세계 1위 재탈환... 평균 1.2Gbps 기록</span>
+        <span>애플, 아이폰 17 시리즈 9월 공개 예고... 폴더블 모델도 함께 출시?</span>
+        <span>삼성 갤럭시 AI 2.0 업데이트 글로벌 배포 시작</span>
+        <span>오픈AI, GPT-5 출시 임박... 멀티모달 성능 대폭 향상</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-wrapper">
+
+    <!-- ===== CONTENT COLUMN ===== -->
+    <main>
+
+      <!-- 히어로 카드 -->
+      <div class="section-head">
+        <h2 class="section-title">오늘의 헤드라인</h2>
+        <a href="#" class="see-all">전체보기</a>
+      </div>
+
+      <article class="hero-card">
+        <div class="hero-thumb">🤖</div>
+        <div class="hero-body">
+          <span class="tag tag-ai">🧠 AI</span>
+          <h2>GPT-5 드디어 출시! 이전 버전과 무엇이 달라졌나?</h2>
+          <p>오픈AI가 차세대 대형 언어 모델 GPT-5를 공식 발표했습니다. 멀티모달 추론 능력이 대폭 향상되었으며, 실시간 웹 검색과 코드 실행이 기본 탑재됩니다.</p>
+          <div class="card-meta">
+            <span>✍️ 테크팝 에디터</span>
+            <span class="dot">•</span>
+            <span>2025.04.03</span>
+            <span class="dot">•</span>
+            <span>☕ 3분 읽기</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 그리드 카드 -->
+      <div class="section-head">
+        <h2 class="section-title">최신 뉴스</h2>
+        <a href="#" class="see-all">더보기</a>
+      </div>
+
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-thumb t1">📱</div>
+          <div class="article-body">
+            <span class="tag tag-phone">📱 스마트폰</span>
+            <h3>갤럭시 S26 Ultra 스펙 유출... 200MP 잠망경 카메라 탑재</h3>
+            <p>삼성의 차기 플래그십에 새로운 카메라 센서와 스냅드래곤 X Elite이 탑재될 것으로 알려졌습니다.</p>
+            <div class="card-meta" style="margin-top:10px">
+              <span>2025.04.02</span>
+              <span class="dot">•</span>
+              <a href="#" class="read-more">읽기</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb t2">🔒</div>
+          <div class="article-body">
+            <span class="tag tag-sec">🔒 보안</span>
+            <h3>카카오톡 취약점 발견, 즉시 업데이트 필수!</h3>
+            <p>보안 연구팀이 카카오톡 최신 버전에서 원격 코드 실행 취약점을 발견했습니다. 사용자는 즉시 업데이트를 권장합니다.</p>
+            <div class="card-meta" style="margin-top:10px">
+              <span>2025.04.01</span>
+              <span class="dot">•</span>
+              <a href="#" class="read-more">읽기</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb t3">💻</div>
+          <div class="article-body">
+            <span class="tag tag-hw">💻 PC</span>
+            <h3>인텔 코어 Ultra 300 벤치마크 결과 공개, AMD 라이젠을 앞질렀나?</h3>
+            <p>최신 벤치마크 결과에서 인텔 코어 Ultra 300 시리즈가 AMD 라이젠 9000 시리즈를 일부 항목에서 앞서는 것으로 나타났습니다.</p>
+            <div class="card-meta" style="margin-top:10px">
+              <span>2025.03.31</span>
+              <span class="dot">•</span>
+              <a href="#" class="read-more">읽기</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-thumb t4">🎮</div>
+          <div class="article-body">
+            <span class="tag tag-app">🎮 앱/게임</span>
+            <h3>닌텐도 스위치 2 최종 스펙 확정, 4K 60fps 지원 공식화</h3>
+            <p>닌텐도가 스위치 2의 공식 스펙을 발표했습니다. DLSS 기술 적용으로 TV 모드에서 4K 해상도를 지원합니다.</p>
+            <div class="card-meta" style="margin-top:10px">
+              <span>2025.03.30</span>
+              <span class="dot">•</span>
+              <a href="#" class="read-more">읽기</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ===== IN-CONTENT AD ===== -->
+      <!-- ✅ 광고 배치 위치 2: 콘텐츠 중간 광고 (수익률 가장 높은 위치) -->
+      <div class="ad-in-content">
+        <div class="ad-slot-label" style="margin-bottom:8px">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:block;width:100%;max-width:728px;height:90px;"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- 리스트 카드 -->
+      <div class="section-head">
+        <h2 class="section-title">IT 꿀팁 모음</h2>
+        <a href="#" class="see-all">더보기</a>
+      </div>
+
+      <div class="article-list">
+        <article class="list-card">
+          <div class="list-thumb l1">💡</div>
+          <div class="list-body">
+            <span class="tag tag-tip" style="margin-bottom:4px">💡 꿀팁</span>
+            <h3>윈도우 11 숨겨진 기능 10가지, 알면 업무 효율 2배!</h3>
+            <p>마이크로소프트가 조용히 추가한 생산성 기능들을 알아보세요. 가상 데스크탑부터 포커스 세션까지, 아직 모르고 있던 기능이 있을 겁니다.</p>
+            <div class="list-meta">✍️ 박지수 · 2025.04.01 · ☕ 5분 읽기</div>
+          </div>
+        </article>
+
+        <article class="list-card">
+          <div class="list-thumb l2">🔋</div>
+          <div class="list-body">
+            <span class="tag tag-phone" style="margin-bottom:4px">📱 스마트폰</span>
+            <h3>스마트폰 배터리 수명 2배 늘리는 충전 습관 총정리</h3>
+            <p>리튬이온 배터리의 올바른 관리법을 알고 있나요? 전문가가 알려주는 올바른 충전 습관으로 배터리 수명을 최대한 유지하세요.</p>
+            <div class="list-meta">✍️ 김태현 · 2025.03.29 · ☕ 4분 읽기</div>
+          </div>
+        </article>
+
+        <article class="list-card">
+          <div class="list-thumb l3">🛡️</div>
+          <div class="list-body">
+            <span class="tag tag-sec" style="margin-bottom:4px">🔒 보안</span>
+            <h3>무료 VPN 쓰면 안 되는 이유 5가지 — 대신 이걸 쓰세요</h3>
+            <p>무료 VPN 서비스 대부분이 사용자 데이터를 판매한다는 사실, 알고 계셨나요? 안전하고 합리적인 유료 VPN 추천 목록도 함께 정리했습니다.</p>
+            <div class="list-meta">✍️ 이미래 · 2025.03.28 · ☕ 6분 읽기</div>
+          </div>
+        </article>
+
+        <article class="list-card">
+          <div class="list-thumb l4">🤖</div>
+          <div class="list-body">
+            <span class="tag tag-ai" style="margin-bottom:4px">🧠 AI</span>
+            <h3>직장인이 매일 쓰는 AI 도구 TOP 7 — 진짜 업무에 도움됩니다</h3>
+            <p>ChatGPT, Claude, Copilot... AI 도구가 너무 많아 뭘 써야 할지 모르겠다면? 실제 직장인들이 매일 사용하는 AI 도구와 활용법을 정리했습니다.</p>
+            <div class="list-meta">✍️ 최준호 · 2025.03.27 · ☕ 7분 읽기</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ===== BOTTOM IN-CONTENT AD ===== -->
+      <!-- ✅ 광고 배치 위치 3: 콘텐츠 하단 광고 -->
+      <div class="ad-in-content">
+        <div class="ad-slot-label" style="margin-bottom:8px">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:block;width:100%;max-width:336px;height:280px;"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"
+             data-ad-format="rectangle"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </main>
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+
+      <!-- ✅ 광고 배치 위치 4: 사이드바 광고 (300x250 가장 인기 있는 포맷) -->
+      <div class="sidebar-ad">
+        <div class="ad-slot-label" style="margin-bottom:8px">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:block;width:300px;height:250px;"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- 인기 글 -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title">🔥 이번 주 인기글</h3>
+        <ul class="popular-list">
+          <li class="popular-item">
+            <span class="popular-num">1</span>
+            <div>
+              <div class="popular-text">아이폰 17 Pro 완전 정리 — 달라지는 것 모두 알아봄<small>📱 스마트폰 · 12.4만 뷰</small></div>
+            </div>
+          </li>
+          <li class="popular-item">
+            <span class="popular-num">2</span>
+            <div>
+              <div class="popular-text">2025년 최고의 무선 이어폰 TOP 5 비교 리뷰<small>🎧 리뷰 · 8.1만 뷰</small></div>
+            </div>
+          </li>
+          <li class="popular-item">
+            <span class="popular-num">3</span>
+            <div>
+              <div class="popular-text">ChatGPT vs Claude vs Gemini — 2025년 최신 비교<small>🧠 AI · 6.7만 뷰</small></div>
+            </div>
+          </li>
+          <li class="popular-item">
+            <span class="popular-num">4</span>
+            <div>
+              <div class="popular-text">공짜로 쓸 수 있는 AI 이미지 생성 사이트 7곳<small>🎨 꿀팁 · 5.3만 뷰</small></div>
+            </div>
+          </li>
+          <li class="popular-item">
+            <span class="popular-num">5</span>
+            <div>
+              <div class="popular-text">맥북 vs 윈도우 노트북, 2025년 선택 가이드<small>💻 PC · 4.9만 뷰</small></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 카테고리 -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title">📂 카테고리</h3>
+        <div class="category-chips">
+          <span class="chip chip-ai">🧠 AI/ML</span>
+          <span class="chip chip-ph">📱 스마트폰</span>
+          <span class="chip chip-pc">💻 PC/하드웨어</span>
+          <span class="chip chip-sec">🔒 보안</span>
+          <span class="chip chip-app">🎮 앱/게임</span>
+          <span class="chip chip-tip">💡 꿀팁</span>
+          <span class="chip chip-ev">⚡ 전기차/IoT</span>
+          <span class="chip chip-iot">🏠 스마트홈</span>
+        </div>
+      </div>
+
+      <!-- 사이드바 두 번째 광고 (세로 스크롤 따라오는 고정 광고) -->
+      <!-- ✅ 광고 배치 위치 5: 사이드바 두 번째 광고 -->
+      <div class="sidebar-ad">
+        <div class="ad-slot-label" style="margin-bottom:8px">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:block;width:300px;height:250px;"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- 뉴스레터 -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title">📬 뉴스레터 구독</h3>
+        <p style="font-size:0.83rem;color:var(--mid);margin-bottom:14px">매주 화·금, 놓치면 안 될 IT 뉴스를 이메일로 받아보세요!</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="이메일 주소 입력" />
+          <button type="button">무료 구독하기 →</button>
+        </div>
+        <p class="newsletter-note" style="margin-top:8px">✅ 스팸 없음 · 언제든 구독 해지 가능</p>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+
+    <!-- ✅ 광고 배치 위치 6: 푸터 상단 배너 광고 -->
+    <div class="footer-ad">
+      <ins class="adsbygoogle"
+           style="display:block;width:728px;height:90px;"
+           data-ad-client="ca-pub-XXXXXXXXXX"
+           data-ad-slot="YYYYYYYYYY"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="footer-main">
+      <div>
+        <div class="footer-logo">Tech<span>Pop</span></div>
+        <p class="footer-desc">
+          IT와 테크를 쉽고 재미있게 전달합니다.<br>
+          최신 뉴스, 솔직한 리뷰, 실용적인 꿀팁까지<br>
+          TechPop과 함께라면 뒤처질 걱정 없어요! 🚀
+        </p>
+        <div class="social-links">
+          <div class="social-btn">📘</div>
+          <div class="social-btn">🐦</div>
+          <div class="social-btn">📸</div>
+          <div class="social-btn">▶️</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>카테고리</h4>
+        <ul>
+          <li><a href="#">AI/머신러닝</a></li>
+          <li><a href="#">스마트폰</a></li>
+          <li><a href="#">PC & 노트북</a></li>
+          <li><a href="#">보안 & 해킹</a></li>
+          <li><a href="#">앱 리뷰</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>서비스</h4>
+        <ul>
+          <li><a href="#">가격비교</a></li>
+          <li><a href="#">제품 스펙 DB</a></li>
+          <li><a href="#">뉴스레터</a></li>
+          <li><a href="#">RSS 피드</a></li>
+          <li><a href="#">제보하기</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>회사</h4>
+        <ul>
+          <li><a href="#">소개</a></li>
+          <li><a href="#">광고 문의</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">제휴 문의</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 TechPop. All rights reserved.</span>
+      <span style="font-size:0.73rem;color:#555">이 사이트의 일부 링크는 제휴 마케팅을 포함할 수 있습니다.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

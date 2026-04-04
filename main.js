@@ -261,6 +261,9 @@ class ArticleCard extends HTMLElement {
         const link = this.getAttribute('link');
         const isFeatured = this.hasAttribute('data-featured');
 
+        const defaultImage = 'https://picsum.photos/seed/default/800/600';
+        const cardImage = image || defaultImage;
+
         const template = document.createElement('template');
         template.innerHTML = `
             <style>
@@ -292,12 +295,17 @@ class ArticleCard extends HTMLElement {
                     transform: translateY(-5px);
                     box-shadow: 0 12px 24px rgba(0,0,0,0.25);
                 }
-                .image {
+                .image-wrapper {
+                    width: 100%;
                     height: 250px;
-                    background-size: cover;
-                    background-position: center;
-                    background-image: url('${image || ''}');
-                    display: ${image ? 'block' : 'none'};
+                    overflow: hidden;
+                    background-color: #ddd;
+                }
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
                 }
                 .icon { 
                     font-size: 4rem; 
@@ -344,7 +352,9 @@ class ArticleCard extends HTMLElement {
                 }
             </style>
             <div class="card">
-                ${image ? `<div class="image"></div>` : ''}
+                <div class="image-wrapper">
+                    <img class="image" src="${cardImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
+                </div>
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">
                     <h3 class="title">${title}</h3>

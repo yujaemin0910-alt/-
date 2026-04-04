@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=5.0" />
+    <title>전체 글 목록 - 시니어 정책 정보센터</title>
+    <meta name="description" content="시니어 정책 정보센터의 모든 복지 정책 정보를 확인하세요. 기초연금, 건강검진, 노인 일자리, 교통 할인 등 어르신을 위한 최신 정보를 제공합니다." />
+    <meta property="og:title" content="전체 글 목록 - 시니어 정책 정보센터" />
+    <meta property="og:description" content="시니어 정책 정보센터의 모든 복지 정책 정보를 확인하세요." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://senior-policy.kr/articles.html" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js"></script>
+    <script>
+        (function(){
+            var fs = localStorage.getItem('fontSize');
+            if(fs === 'large') document.documentElement.classList.add('font-large');
+            if(fs === 'xlarge') document.documentElement.classList.add('font-xlarge');
+        })();
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9531983779628478" crossorigin="anonymous"></script>
+    <style>
+        .articles-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #1a2a6c;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.4rem;
+            color: #666;
+        }
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.3rem;
+            border: 3px solid #ddd;
+            border-radius: 15px;
+            outline: none;
+        }
+        .search-box input:focus {
+            border-color: #0052cc;
+        }
+        .search-box button {
+            padding: 1.2rem 2rem;
+            font-size: 1.2rem;
+            background: #1a2a6c;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .category-tab {
+            padding: 0.8rem 1.8rem;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        .category-tab:hover,
+        .category-tab.active {
+            background: #ffd700;
+            color: #000;
+        }
+        .articles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        .no-results {
+            text-align: center;
+            padding: 4rem;
+            font-size: 1.4rem;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .articles-list {
+                grid-template-columns: 1fr;
+            }
+            .search-box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <site-header></site-header>
+
+    <main class="articles-page">
+        <div class="page-header">
+            <h1>전체 정책 정보</h1>
+            <p>어르신을 위한 최신 복지 정책 정보를 모두 확인하세요</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="검색어를 입력하세요 (예: 기초연금, 건강검진)" />
+            <button onclick="filterArticles()">검색</button>
+        </div>
+
+        <div class="category-tabs">
+            <button class="category-tab active" onclick="filterCategory('all')">전체</button>
+            <button class="category-tab" onclick="filterCategory('pension')">연금·생활</button>
+            <button class="category-tab" onclick="filterCategory('health')">건강·의료</button>
+            <button class="category-tab" onclick="filterCategory('work')">일자리</button>
+            <button class="category-tab" onclick="filterCategory('transport')">교통·요금</button>
+            <button class="category-tab" onclick="filterCategory('digital')">디지털</button>
+        </div>
+
+        <div id="articlesList" class="articles-list">
+            <article-card 
+                image="https://picsum.photos/seed/senior/800/600"
+                title="60대라면 꼭 알아야 할 2026년 복지 변화 5가지" 
+                description="기초연금 인상부터 일자리 확대까지, 올해부터 달라지는 혜택을 정리했습니다."
+                link="/article.html?id=article-1"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/health/800/600"
+                title="국가건강검진, 꼭 받아야 할 이유와 주의사항" 
+                description="무료로 제공되는 국가건강검진, 2026년 검진 대상자 확인 방법부터 주의사항까지 안내합니다."
+                link="/article.html?id=article-2"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension/800/600"
+                title="기초연금, 신청 대상과 수령액 확인 방법" 
+                description="기초연금 수급 조건과 소득인정액 기준, 신청 방법과 예상 수령액을 안내합니다."
+                link="/article.html?id=article-3"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/work/800/600"
+                title="2026년 노인 일자리 신청, 늦기 전에 서두르세요" 
+                description="활기찬 노후를 위한 정부 지원 일자리, 신청 기간과 장소를 확인하세요."
+                link="/article.html?id=article-4"
+                data-category="work">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/phone/800/600"
+                title="어르신 스마트폰, 글씨 크게 보는 3가지 방법" 
+                description="눈이 침침하시죠? 스마트폰을 더 편하게 쓰는 쉬운 모드 설정법을 알려드립니다."
+                link="/article.html?id=article-5"
+                data-category="digital">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/hobby/800/600"
+                title="무료로 즐기는 취미 교실, 집 근처 어디 있을까?" 
+                description="서예, 댄스, 노래 교실까지! 어르신을 위한 무료 여가 활동 정보를 모았습니다."
+                link="/article.html?id=article-6"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/eye/800/600"
+                title="노안을 늦추는 최고의 생활 습관 5가지" 
+                description="소중한 시력을 지키기 위해 오늘부터 실천해야 할 5가지 약속입니다."
+                link="/article.html?id=article-7"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/subway/800/600"
+                title="무임 교통카드, 만 65세 이상이라면 발급받으세요" 
+                description="만 65세라면 누구나 가능! 발급 신청 방법부터 혜택까지 정리했습니다."
+                link="/article.html?id=article-8"
+                data-category="transport">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/hospital/800/600"
+                title="어르신을 위한 건강 관리, 꼭 알아야 할 건강 상식" 
+                description="매일 실천하면 좋은 건강 습관과 정기 건강검진의 중요성에 대해 알아봅니다."
+                link="/article.html?id=article-9"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/food/800/600"
+                title="우리나라 먹거리 역대급 수출 기록, 코스피 식품주 전망" 
+                description="전 세계가 우리 먹거리에 푹 빠졌습니다! 역대급 수출 기록 소식과 주식 전망을 확인하세요."
+                link="/article.html?id=article-10"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension/800/600"
+                title="기초연금, 신청하지 않으면 받을 수 없습니다" 
+                description="기초연금은 신청해야 받을 수 있습니다. 자동으로 주는 돈이 아니라서 대상인데도 못 받는 분들이 많습니다."
+                link="/article.html?id=article-11"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/healthcare/800/600"
+                title="의료·요양·돌봄 통합서비스, 2026년 3월부터 전국 시행" 
+                description="집에서 돌봄을 받을 수 있는 통합서비스가 전국 시행됩니다. 신청 방법과 제공 서비스를 안내합니다."
+                link="/article.html?id=article-12"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/care/800/600"
+                title="돌봄통합지원법 시행에 따른 지원 대상 및 제도의 변화" 
+                description="돌봄통합지원법의 시행에 따른 지원 대상자 선정 기준과 제도의 주요 변화를 안내합니다."
+                link="/article.html?id=article-13"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/industry/800/600"
+                title="자동차 수출 물류 위기 및 정부의 산업 지원 방안" 
+                description="중동 분쟁으로 인한 자동차 수출 물류 위기와 정부의 28조 원 규모 산업 지원 방안에 대해 알아봅니다."
+                link="/article.html?id=article-14"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension2/800/600"
+                title="노후 준비, 연금제도개편 핵심 정리" 
+                description="국민연금 개혁안에 대한 주요 내용과 노후에 받을 수 있는 연금액 확인 방법을 안내합니다."
+                link="/article.html?id=article-15"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/dental/800/600"
+                title="어르신을 위한 틀니·임플란트 지원 사업 안내" 
+                description="만 65세 이상 어르신의 구강 건강을 위한 틀니 및 임플란트 비용 지원 제도에 대해 알아봅니다."
+                link="/article.html?id=article-16"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/bank/800/600"
+                title="시니어 맞춤 금융 상품, 지금 주목해야 할 이유는?" 
+                description="어르신을 위한 은행 상품과 저축 방법, 꼭 알아야 할 금융 상식을 정리합니다."
+                link="/article.html?id=article-17"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/travel/800/600"
+                title="어르신을 위한 여행 할인, 이렇게 받으세요" 
+                description="경향적 관광지 입장료 할인부터 숙박권까지, 어르신 여행우대정책 모음입니다."
+                link="/article.html?id=article-18"
+                data-category="transport">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/home/800/600"
+                title="노인 주거 지원 정책, 내 상황에 맞는 건どれ?" 
+                description=" 공공임대주택부터 개조 지원까지, 어르신을 위한 주거 지원 제도를자세한 안내합니다."
+                link="/article.html?id=article-19"
+                data-category="pension">
+            </article-card>
+        </div>
+
+        <div id="noResults" class="no-results" style="display:none;">
+            검색 결과가 없습니다. 다른 검색어를 입력해 보세요.
+        </div>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script>
+        let currentCategory = 'all';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') filterArticles();
+            });
+        });
+
+        function filterCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.toggle('active', tab.textContent === getCategoryName(category) || 
+                    (category === 'all' && tab.textContent === '전체'));
+            });
+            filterArticles();
+        }
+
+        function getCategoryName(cat) {
+            const names = {
+                'all': '전체', 'pension': '연금·생활', 'health': '건강·의료',
+                'work': '일자리', 'transport': '교통·요금', 'digital': '디지털', 'etc': '기타'
+            };
+            return names[cat] || '전체';
+        }
+
+        function filterArticles() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('article-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const title = card.getAttribute('title') || '';
+                const description = card.getAttribute('description') || '';
+                const category = card.getAttribute('data-category') || '';
+                
+                const matchesSearch = title.toLowerCase().includes(searchTerm) || 
+                                     description.toLowerCase().includes(searchTerm);
+                const matchesCategory = currentCategory === 'all' || category === currentCategory;
+                
+                const shouldShow = matchesSearch && matchesCategory;
+                card.style.display = shouldShow ? '' : 'none';
+                if (shouldShow) visibleCount++;
+            });
+
+            document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

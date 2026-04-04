@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=5.0" />
     <title>시니어 정책 정보센터</title>
-    <meta name="description" content="" />
+    <meta name="description" content="시니어 정책 정보센터 - 어르신을 위한 최신 복지 정책 정보를 가장 쉽고 빠르게 제공합니다." />
+    <meta property="og:title" content="시니어 정책 정보센터" />
+    <meta property="og:description" content="2026년 달라지는 복지 혜택, 어르신을 위한 최신 핵심 정책 정보를 가장 쉽고 빠르게 확인하세요." />
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=og" />
+    <meta property="og:url" content="https://senior-policy.kr/article.html" />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/main.js"></script>
     <script>
@@ -72,7 +77,7 @@
 
                 // --- Render HTML ---
                 const articleImage = frontmatter.image ? 
-                    `<img src="${frontmatter.image}" alt="${frontmatter.title}" style="width:100%; max-height:250px; object-fit:cover; border-radius:8px; margin-bottom:1rem;">` : '';
+                    `<img src="${frontmatter.image}" alt="${frontmatter.title}" loading="lazy" style="width:100%; max-height:250px; object-fit:cover; border-radius:8px; margin-bottom:1rem;">` : '';
                 
                 const sourceText = frontmatter.source || '대한민국 정책 브리핑';
                 const sourceUrl = frontmatter.sourceUrl || 'https://www.korea.kr/';

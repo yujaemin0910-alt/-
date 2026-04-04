@@ -1,3 +1,21 @@
+// ===== Lazy Loading Images =====
+if ('IntersectionObserver' in window) {
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                }
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => imageObserver.observe(img));
+}
+
 // ===== Smooth Scroll Animation =====
 document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href^="#"]');
@@ -143,7 +161,8 @@ class SiteHeader extends HTMLElement {
                     <a href="/" class="site-header__logo">시니어 정보센터</a>
                     <nav class="site-header__nav">
                         <a href="/#main-content">최신 정보</a>
-                        <a href="/#quick-links-title">자주 찾는 서비스</a>
+                        <a href="/articles.html">전체 글</a>
+                        <a href="/faq.html">자주 묻는 질문</a>
                         <a href="/#resources-section">정책 자료실</a>
                     </nav>
                     <div class="font-controls">
@@ -200,6 +219,7 @@ class SiteFooter extends HTMLElement {
                     justify-content: center;
                     gap: 3rem;
                     margin-bottom: 3rem;
+                    flex-wrap: wrap;
                 }
                 .site-footer__links a {
                     color: #ffffff;
@@ -223,7 +243,11 @@ class SiteFooter extends HTMLElement {
                 <div class="site-footer__wrapper">
                     <div class="site-footer__links">
                         <a href="/about.html">센터 소개</a>
+                        <a href="/articles.html">전체 글</a>
+                        <a href="/faq.html">자주 묻는 질문</a>
                         <a href="/privacy.html">개인정보처리방침</a>
+                        <a href="/terms.html">이용약관</a>
+                        <a href="/inquiry.html">광고 문의</a>
                     </div>
                     <p class="site-footer__copyright">© ${new Date().getFullYear()} 시니어 정책 정보센터. All rights reserved.</p>
                     <p class="site-footer__disclaimer">본 사이트의 정보는 공식 발표를 기반으로 하며, 최신 정보와 다를 수 있습니다.</p>
@@ -271,10 +295,25 @@ class CookieConsent extends HTMLElement {
                     color: #333;
                     flex: 1;
                 }
+                .cookie-consent-buttons {
+                    display: flex;
+                    gap: 0.5rem;
+                }
                 .btn-accept {
                     background: #0052cc;
                     color: white;
                     border: none;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    font-size: 1rem;
+                }
+                .btn-decline {
+                    background: #f0f0f0;
+                    color: #666;
+                    border: 1px solid #ddd;
                     padding: 0.8rem 1.5rem;
                     border-radius: 8px;
                     font-weight: bold;
@@ -295,13 +334,21 @@ class CookieConsent extends HTMLElement {
                 }
             </style>
             <div class="cookie-consent">
-                <p>본 사이트는 사용자 경험 개선 및 통계 분석을 위해 쿠키를 사용합니다.</p>
-                <button class="btn-accept">동의</button>
+                <p>본 사이트는 사용자 경험 개선 및 통계 분석을 위해 쿠키를 사용합니다. 광고 Personalized을 위해 Third-party cookies를 사용합니다.</p>
+                <div class="cookie-consent-buttons">
+                    <button class="btn-accept">동의</button>
+                    <button class="btn-decline">거부</button>
+                </div>
             </div>
         `;
 
         this.shadowRoot.querySelector('.btn-accept').addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'true');
+            localStorage.setItem('cookieConsent', 'accepted');
+            this.remove();
+        });
+
+        this.shadowRoot.querySelector('.btn-decline').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
             this.remove();
         });
     }
@@ -414,7 +461,7 @@ class ArticleCard extends HTMLElement {
             </style>
             <div class="card">
                 <div class="image-wrapper">
-                    <img class="image" src="${cardImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
+                    <img class="image" src="${cardImage}" alt="${title || ''}" loading="lazy" onerror="this.src='${defaultImage}'">
                 </div>
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">

@@ -1,0 +1,3 @@
+# Google Site Verification
+# This file is used by Google to verify domain ownership for Google AdSense and Search Console
+google-site-verification: googleabc123xyz789

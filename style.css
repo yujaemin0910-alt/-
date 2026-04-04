@@ -2,492 +2,316 @@
  * B A S E
  *=============================================*/
 
-/* ----- Root / Variables ----- */
 :root {
     --font-primary: 'Noto Sans KR', sans-serif;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-
-    --color-navy: #2c3e50;
-    --color-beige: #f5f5dc;
-    --color-blue: #3498db;
-    --color-white: #ffffff;
-    --color-light-gray: #ecf0f1;
-    --color-gray: #bdc3c7;
-    --color-dark-gray: #7f8c8d;
-    --color-accent: #e67e22; /* Warm orange for accent */
     
-    --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lifted: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-
-    --border-radius: 16px; /* Slightly more rounded */
-    --site-padding: 2rem;
+    /* 어르신들을 위한 고대비 색상 (파랑/노랑/흰색) */
+    --color-navy: #1a2a6c;     /* 진한 파랑 (배경용) */
+    --color-blue: #0052cc;     /* 메인 파랑 */
+    --color-yellow: #ffd700;   /* 밝은 노랑 (강조용 - 가독성 최고) */
+    --color-white: #ffffff;
+    --color-light-gray: #f8f9fa;
+    --color-dark-gray: #333333;
+    
+    --shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --border-radius-large: 20px;
 }
 
-/* ----- General / Body ----- */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
+/* 1. 글씨 크기 큼 (최소 20px) */
 html {
-    font-size: 18px; /* Increased base font size */
+    font-size: 20px; 
 }
 
 body {
     font-family: var(--font-primary);
-    font-weight: var(--font-weight-regular);
-    line-height: 1.8; /* Increased line height for readability */
-    color: var(--color-navy);
+    line-height: 1.8;
+    color: var(--color-dark-gray);
     background-color: var(--color-light-gray);
     margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    font-weight: var(--font-weight-bold);
-    line-height: 1.3;
-}
-
-a {
-    color: var(--color-blue);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: var(--color-navy);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
+    word-break: keep-all; /* 단어 단위로 줄바꿈 (가독성 향상) */
 }
 
 /*=============================================*
- * L A Y O U T
+ * L A Y O U T & S P A C I N G
  *=============================================*/
 
 main {
-    padding: var(--site-padding) 0;
+    padding-bottom: 5rem;
+}
+
+/* 7. 한 화면에 정보가 많지 않도록 여백을 넓게 */
+section {
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .section-title {
-    font-size: 2.5rem; /* Increased */
-    font-weight: var(--font-weight-black);
+    font-size: 2.8rem;
+    font-weight: 900;
     color: var(--color-navy);
     text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 1rem;
+    margin-bottom: 4rem;
 }
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: var(--color-accent);
-    border-radius: 2px;
-}
-
-.article-page main {
-    padding: 3rem var(--site-padding);
-}
-
 
 /*=============================================*
- * C O M P O N E N T S
+ * 2. 버튼 큼 (손 떨림 고려)
  *=============================================*/
 
 .btn-primary {
     display: inline-block;
-    background-color: var(--color-accent); /* Changed to accent color */
-    color: var(--color-white);
-    padding: 1.2rem 3rem; /* Larger padding */
-    border-radius: 60px;
-    font-size: 1.2rem; /* Larger font */
-    font-weight: var(--font-weight-bold);
-    box-shadow: var(--shadow-lifted);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    border: none;
+    background-color: var(--color-yellow);
+    color: #000; /* 노랑 배경엔 검정 글씨가 가장 잘 보임 */
+    padding: 1.5rem 4rem;
+    border-radius: 80px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: var(--shadow-strong);
+    border: 4px solid #b8860b; /* 버튼 테두리를 주어 더 명확하게 함 */
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    background-color: #d35400;
-    color: var(--color-white);
+    transform: scale(1.05);
 }
 
+/*=============================================*
+ * 6. 가장 중요한 정보가 맨 위 (HERO)
+ *=============================================*/
 
 .hero-section {
-    background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+    background-color: var(--color-navy);
     color: var(--color-white);
-    padding: 8rem var(--site-padding) 10rem;
+    padding: 6rem 2rem 8rem;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-    background-size: 30px 30px;
-    animation: bg-pan 60s linear infinite;
-}
-
-@keyframes bg-pan {
-    from { transform: translateX(0); }
-    to { transform: translateX(-150px); }
-}
-
 
 .hero-content .subtitle {
     display: block;
-    font-size: 1.5rem; /* Increased */
-    font-weight: var(--font-weight-regular);
-    opacity: 0.9;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-yellow);
+    margin-bottom: 1.5rem;
 }
 
 .hero-content .title {
     display: block;
-    font-size: 3.5rem; /* Increased */
-    font-weight: var(--font-weight-black);
-    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
     line-height: 1.2;
 }
 
 .hero-content .description {
-    font-size: 1.3rem; /* Increased */
-    max-width: 700px;
-    margin: 0 auto 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
     opacity: 0.9;
 }
 
-
-.article-section {
-    padding: 5rem var(--site-padding);
-    background-color: var(--color-white);
-}
+/*=============================================*
+ * 5. 아이콘 큼직하게 (직관적 이해)
+ *=============================================*/
 
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem; /* Increased gap */
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.quick-links-section {
-    padding: 5rem var(--site-padding);
-}
-
-.quick-links-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Mobile default to 1 column for large text */
-    gap: 2rem;
+    gap: 4rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.quick-link {
-    background-color: var(--color-white);
-    border-radius: var(--border-radius);
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.4rem; /* Increased */
-    font-weight: var(--font-weight-bold);
-    color: var(--color-navy);
-    box-shadow: var(--shadow-soft);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.article-card {
+    background: white;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-strong);
+    border: 3px solid #eee;
+    text-decoration: none;
+    color: inherit;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.quick-link:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lifted);
-    color: var(--color-accent);
+.article-card__image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-card__content {
+    padding: 3rem;
+}
+
+.article-card__title {
+    font-size: 2.2rem;
+    color: var(--color-navy);
+    margin-bottom: 1.5rem;
+}
+
+.article-card__description {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* '자세히 보기' 버튼 우측 정렬 및 강조 */
+.article-card__link {
+    display: block;
+    text-align: right;
+    font-weight: 900;
+    color: var(--color-blue);
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+    background: #f0f7ff;
+    border-top: 1px solid #eee;
+}
+
+/*=============================================*
+ * 3. 색 대비 강함 (파랑/노랑/흰색)
+ *=============================================*/
+
+.site-header {
+    background: var(--color-navy);
+    padding: 1.5rem 0;
+}
+
+.site-header__logo {
+    color: var(--color-yellow);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+
+.site-header__nav {
+    display: none; /* 복잡한 메뉴는 과감히 숨김 (필요시 햄버거 메뉴) */
+}
+
+/* 자주 찾는 서비스 - 고대비 노란색 카드 */
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.quick-link {
+    background: var(--color-yellow);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-large);
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-size: 1.6rem;
+    box-shadow: var(--shadow-strong);
 }
 
 .quick-link-icon {
-    font-size: 3.5rem; /* Increased */
+    font-size: 4rem;
     display: block;
     margin-bottom: 1rem;
-}
-
-
-.site-header {
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-soft);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.site-header__wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--site-padding);
-    height: 90px; /* Taller header */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.site-header__logo {
-    font-weight: var(--font-weight-black);
-    font-size: 1.5rem; /* Increased */
-    color: var(--color-navy);
-}
-.site-header__nav a {
-    margin-left: 2rem;
-    font-weight: var(--font-weight-bold);
-    font-size: 1.1rem;
-    color: var(--color-dark-gray);
-    position: relative;
-}
-.site-header__nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
-}
-.site-header__nav a:hover::after {
-    width: 100%;
-}
-
-.site-header__mobile-menu-btn {
-    display: none;
-    background: none; border: none; cursor: pointer; padding: 0.5rem;
-}
-.site-header__mobile-menu-btn span {
-    display: block; width: 30px; height: 4px; background-color: var(--color-navy); margin: 6px 0; transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.site-footer { 
-    background-color: var(--color-navy); color: var(--color-light-gray); 
-    padding: 5rem var(--site-padding); text-align: center; 
-}
-.site-footer__wrapper { max-width: 1200px; margin: 0 auto; }
-.site-footer__links { margin-bottom: 2rem; }
-.site-footer__links a { color: var(--color-light-gray); margin: 0 1rem; font-weight: var(--font-weight-bold); font-size: 1.1rem; }
-.site-footer__links a:hover { color: var(--color-white); }
-.site-footer__copyright { margin-bottom: 1rem; font-size: 1.1rem; }
-.site-footer__disclaimer { font-size: 0.95rem; color: var(--color-gray); }
-
-
-.article-card { 
-    display: block; background-color: var(--color-white); border-radius: var(--border-radius); 
-    overflow: hidden; /* For image clipping */
-    box-shadow: var(--shadow-soft); transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    color: var(--color-navy); display: flex; flex-direction: column; height: 100%;
-    border: 1px solid var(--color-light-gray);
-}
-.article-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lifted); }
-
-.article-card__image {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    background-color: var(--color-light-gray);
-}
-
-.article-card__icon { 
-    font-size: 4rem; 
-    height: 250px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    background-color: var(--color-light-gray);
-}
-
-.article-card__content { 
-    padding: 2.5rem;
-    flex-grow: 1; 
-}
-.article-card__title { font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.3; }
-.article-card__description { 
-    color: var(--color-dark-gray); 
-    margin-bottom: 2rem; 
-    font-size: 1.2rem; 
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.article-card__link { 
-    font-weight: var(--font-weight-bold); 
-    color: var(--color-blue); 
-    font-size: 1.1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--color-light-gray);
-    width: 100%;
-}
-
-.article-card--featured {
-    background: var(--color-navy);
-    color: var(--color-white);
-    border: none;
-}
-.article-card--featured .article-card__title { color: var(--color-white); }
-.article-card--featured .article-card__description { color: var(--color-light-gray); }
-.article-card--featured .article-card__link { color: var(--color-accent); border-top-color: rgba(255,255,255,0.1); }
-
-
-.cookie-consent { 
-    position: fixed; bottom: 0; left: 0; right: 0; 
-    background-color: rgba(0,0,0,0.9); color: white; 
-    padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 200;
-    text-align: center;
-}
-.cookie-consent p { margin-bottom: 1rem; font-size: 1.1rem; }
-.cookie-consent .btn-accept { 
-    background-color: var(--color-accent); color: var(--color-white); 
-    border: none; padding: 0.8rem 2rem; border-radius: 30px; cursor: pointer; font-weight: bold; font-size: 1.1rem;
-}
-
-
-/* ----- Article Page Specific ----- */
-.article-content {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: var(--color-white);
-    padding: 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-soft);
-}
-
-.article-header {
-    border-bottom: 2px solid var(--color-light-gray);
-    margin-bottom: 3rem;
-    padding-bottom: 1.5rem;
-}
-
-.article-title {
-    font-size: 3rem;
-    font-weight: var(--font-weight-black);
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-.article-meta {
-    color: var(--color-dark-gray);
-    font-size: 1.1rem;
-}
-
-.article-body {
-    font-size: 1.3rem; /* Larger text for the article body */
-}
-
-.article-body h2 {
-    font-size: 2.2rem;
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-navy);
-    border-left: 6px solid var(--color-accent);
-    padding-left: 1rem;
-}
-
-.article-body p {
-    margin-bottom: 1.5rem;
-}
-
-.article-body ul, .article-body ol {
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-}
-
-.article-body li {
-    margin-bottom: 1rem;
-}
-
-.btn-back {
-    margin-top: 4rem;
 }
 
 /*=============================================*
  * R E S P O N S I V E
  *=============================================*/
 
-@media (max-width: 768px) {
-    html { font-size: 16px; } /* Slightly smaller for mobile but still large */
-    
-    .site-header__wrapper { height: 80px; }
-    
-    .site-header__nav { 
-        display: none; 
-        position: absolute; top: 80px; left: 0; right: 0; 
-        background-color: var(--color-white); 
-        flex-direction: column; 
-        padding: 1.5rem 0; 
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .site-header.is-mobile-menu-open .site-header__nav { display: flex; }
-    .site-header__nav a { margin: 0; padding: 1.2rem var(--site-padding); font-size: 1.3rem; border-bottom: 1px solid var(--color-light-gray); }
-    .site-header__mobile-menu-btn { display: block; }
-    
-    .hero-content .title { font-size: 2.5rem; }
-    .hero-content .subtitle { font-size: 1.2rem; }
-    
-    .article-content { padding: 2rem 1.5rem; }
-    .article-title { font-size: 2.2rem; }
-    
-    .section-title { font-size: 2rem; }
-    
-    .cookie-consent { padding: 2rem 1.5rem; }
-}
-
 @media (min-width: 768px) {
     .article-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .article-grid article-card[data-featured="true"] {
-        grid-column: 1 / -1;
-    }
-
-    .quick-links-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .hero-content .title {
-        font-size: 4.5rem;
-    }
-    
-    .cookie-consent { flex-direction: row; text-align: left; }
-    .cookie-consent p { margin-bottom: 0; }
-}
-
-@media (min-width: 1024px) {
-    .article-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .article-grid article-card[data-featured="true"] {
-        grid-column: span 2;
-    }
-    
     .quick-links-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/*=============================================*
+ * A R T I C L E   P A G E
+ *=============================================*/
+
+.article-page {
+    padding: 4rem 2rem;
+}
+
+.article-content {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 4rem;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-strong);
+}
+
+.article-header {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.article-title {
+    font-size: 3rem;
+    color: var(--color-navy);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.article-meta {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.article-body {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #333;
+}
+
+.article-body h2 {
+    font-size: 2.6rem;
+    color: var(--color-navy);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-left: 10px solid var(--color-yellow);
+    padding-left: 2rem;
+    background: #f9f9f9;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.article-body p {
+    margin-bottom: 2.5rem;
+}
+
+.article-body strong {
+    color: var(--color-blue);
+    font-weight: 900;
+}
+
+/* Source Disclaimer Style */
+.article-source {
+    margin: 6rem 0 4rem;
+    padding: 2.5rem;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    border: 2px dashed #cbd5e0;
+    font-size: 1.4rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.article-source p {
+    margin-bottom: 0 !important;
+}
+
+.article-source a {
+    color: var(--color-blue);
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.btn-back {
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
 }

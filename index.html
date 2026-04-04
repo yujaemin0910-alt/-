@@ -19,6 +19,13 @@
 
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="main.js"></script>
+    <script>
+        (function(){
+            var fs = localStorage.getItem('fontSize');
+            if(fs === 'large') document.documentElement.classList.add('font-large');
+            if(fs === 'xlarge') document.documentElement.classList.add('font-xlarge');
+        })();
+    </script>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>

@@ -7,6 +7,13 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/main.js"></script>
+    <script>
+        (function(){
+            var fs = localStorage.getItem('fontSize');
+            if(fs === 'large') document.documentElement.classList.add('font-large');
+            if(fs === 'xlarge') document.documentElement.classList.add('font-xlarge');
+        })();
+    </script>
     <!-- Marked.js for Markdown to HTML conversion -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>

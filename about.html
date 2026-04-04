@@ -7,6 +7,13 @@
     <meta name="description" content="시니어 정책 정보센터는 어르신을 위한 최신 복지 정책 정보를 가장 쉽고 빠르게 제공하는 사이트입니다." />
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/main.js"></script>
+    <script>
+        (function(){
+            var fs = localStorage.getItem('fontSize');
+            if(fs === 'large') document.documentElement.classList.add('font-large');
+            if(fs === 'xlarge') document.documentElement.classList.add('font-xlarge');
+        })();
+    </script>
 </head>
 <body>
 

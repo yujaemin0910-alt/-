@@ -17,16 +17,39 @@
     --border-radius-large: 20px;
 }
 
-/* 1. 글씨 크기 (모바일: 18px, PC: 20px) - 가독성 최적화 */
+/* 1. 글씨 크기 (모바일: 16px, PC: 18px) */
 html {
-    font-size: 18px; 
+    font-size: 16px; 
     scroll-behavior: smooth;
     text-size-adjust: 100%;
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
+    }
+}
+
+/* 폰트 크기 조절 변수 */
+html {
+    --font-scale: 1;
+}
+
+html.font-large {
+    --font-scale: 1.25;
+}
+
+html.font-xlarge {
+    --font-scale: 1.5;
+}
+
+html {
+    font-size: calc(16px * var(--font-scale));
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: calc(18px * var(--font-scale));
     }
 }
 

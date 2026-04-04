@@ -46,7 +46,7 @@ class SiteHeader extends HTMLElement {
                     padding: 0 2rem;
                 }
                 .site-header__logo {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 900;
                     color: #1a2a6c;
                     text-decoration: none;
@@ -59,7 +59,35 @@ class SiteHeader extends HTMLElement {
                     text-decoration: none;
                     color: #333333;
                     font-weight: 600;
-                    font-size: 1.4rem;
+                    font-size: 1rem;
+                }
+                .font-controls {
+                    display: flex;
+                    gap: 0.5rem;
+                    margin-left: 1rem;
+                }
+                .font-btn {
+                    background: #f0f0f0;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    padding: 0.3rem 0.6rem;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+                .font-btn:hover {
+                    background: #e0e0e0;
+                }
+                @media (max-width: 600px) {
+                    .site-header__logo {
+                        font-size: 1.2rem;
+                    }
+                    .site-header__nav {
+                        display: none;
+                    }
+                    .font-controls {
+                        display: none;
+                    }
                 }
                 .site-header__mobile-menu-btn {
                     display: none;
@@ -107,6 +135,11 @@ class SiteHeader extends HTMLElement {
                         <a href="/#quick-links-title">자주 찾는 서비스</a>
                         <a href="/#resources-section">정책 자료실</a>
                     </nav>
+                    <div class="font-controls">
+                        <button class="font-btn" onclick="document.documentElement.classList.remove('font-large','font-xlarge');localStorage.setItem('fontSize','normal')">가</button>
+                        <button class="font-btn" onclick="document.documentElement.classList.add('font-large');document.documentElement.classList.remove('font-xlarge');localStorage.setItem('fontSize','large')">가</button>
+                        <button class="font-btn" onclick="document.documentElement.classList.add('font-xlarge');document.documentElement.classList.remove('font-large');localStorage.setItem('fontSize','xlarge')">가</button>
+                    </div>
                     <button class="site-header__mobile-menu-btn" aria-label="메뉴 열기">
                         <span></span>
                         <span></span>

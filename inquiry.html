@@ -6,6 +6,13 @@
     <title>광고 문의 - 시니어 정책 정보센터</title>
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/main.js"></script>
+    <script>
+        (function(){
+            var fs = localStorage.getItem('fontSize');
+            if(fs === 'large') document.documentElement.classList.add('font-large');
+            if(fs === 'xlarge') document.documentElement.classList.add('font-xlarge');
+        })();
+    </script>
 </head>
 <body>
 

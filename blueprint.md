@@ -1,44 +1,39 @@
-# Project Blueprint: Interactive Glassmorphism Dashboard
+# Blueprint: 시니어 정책 정보센터
 
-## Overview
-A high-performance, visually stunning web application built with modern web standards (Baseline) and no external frameworks. This project focuses on showcasing modern UI/UX principles, Web Components for modularity, and immersive 3D graphics using Three.js.
+## 1. 프로젝트 개요
 
-## Project Details & Design
-- **Architecture:** Framework-less (Vanilla JS, HTML, CSS).
-- **Modularity:** Using Web Components for encapsulated UI elements.
-- **Styling:** Modern CSS (Container Queries, `:has()`, Cascade Layers, OKLCH colors, variables).
-- **Interactivity:** Fluid animations and smooth transitions.
-- **3D Graphics:** Three.js for immersive background or hero elements.
-- **Visual Style:** 
-  - Expressive typography (modern sans-serif).
-  - Vibrant OKLCH color palette.
-  - Subtle noise textures and multi-layered shadows for depth.
-  - Glassmorphism effects for UI components.
+이 프로젝트는 시니어 사용자를 위해 복잡하고 흩어져 있는 정부의 복지 및 건강 정책 정보를 한곳에 모아, 이해하기 쉽고 접근하기 편한 형태로 제공하는 것을 목표로 합니다. 신뢰성 있는 정보를 바탕으로 광고(애드센스) 수익 모델을 구축하는 것을 염두에 두고 설계합니다.
 
-## Implementation Plan (Current Phase)
-1. **Initialize `blueprint.md`:** Create the blueprint file in the project root to document the project's state and future changes.
-2. **Setup `style.css` (Modern Baseline Features):**
-   - Define global variables for OKLCH colors, spacing, and typography.
-   - Implement a subtle noise texture and multi-layered shadows for depth.
-   - Use `:has()` selector for interactive UI effects.
-   - Implement container queries for component-level responsiveness.
-3. **Develop `main.js` (Three.js & Web Components):**
-   - Integrate Three.js via CDN (ES Modules).
-   - Create an interactive 3D background with floating, glowing spheres or a mesh.
-   - Define Web Components:
-     - `<glass-card>`: A reusable glassmorphism-style card with hover effects.
-     - `<nav-bar>`: A modern, responsive navigation bar.
-     - `<hero-section>`: A visually expressive hero element with Three.js integration.
-4. **Update `index.html`:**
-   - Link Three.js and the custom elements.
-   - Structure the page using the new Web Components.
-5. **Git Setup & Deployment Prep:**
-   - Add the new remote `https://github.com/yujaemin0910-alt/-` if it's different from the current one.
-   - Stage and commit the changes.
+## 2. 디자인 및 기능 구현 계획
 
-## Verification & Testing
-- [x] Initialize `blueprint.md`.
-- [ ] Check console for runtime errors.
-- [ ] Verify responsiveness on multiple screen sizes.
-- [ ] Ensure 3D scene is performing well (no lag).
-- [ ] Validate accessibility (ARIA roles, contrast).
+### 가. 디자인 원칙 (시니어 친화적 UX/UI)
+
+*   **가독성 최우선:**
+    *   **글꼴:** 크고 명확한 'Noto Sans KR' 글꼴을 기본으로 사용합니다.
+    *   **대비:** 배경과 텍스트의 색상 대비를 명확히 하여 눈의 피로를 최소화합니다. (흰색 배경, 진한 회색 텍스트)
+    *   **여백:** 줄 간격과 문단 간격을 넉넉하게 확보하여 답답함 없이 읽을 수 있도록 합니다.
+
+*   **직관적인 탐색:**
+    *   **단순한 구조:** 복잡한 메뉴나 불필요한 시각적 요소를 배제하고, 헤더, 주요 뉴스 목록, 푸터로 구성된 단순한 1단 레이아웃을 유지합니다.
+    *   **명확한 링크:** 사용자가 어디로 이동하는지 명확히 알 수 있도록 링크 텍스트를 직관적으로 작성합니다.
+
+*   **신뢰감 있는 디자인:**
+    *   **색상:** 신뢰와 안정을 주는 파란색 계열을 주요 색상으로 사용하고, 자극적인 색상 사용을 지양합니다.
+    *   **출처 명시:** 모든 정보의 출처(예: 대한민국 정책브리핑)를 명확히 표기하여 콘텐츠의 신뢰도를 높입니다.
+
+### 나. 주요 기능
+
+*   **메인 페이지:** 어르신들이 가장 궁금해할 만한 최신 정책 및 건강 정보 목록을 보여줍니다.
+*   **콘텐츠:** 다음과 같은 주제의 샘플 콘텐츠를 포함하여 사이트의 정체성을 명확히 합니다.
+    *   "2026년 달라지는 시니어 복지, 꼭 챙겨야 할 5가지"
+    *   "올해 꼭 받아야 할 국가건강검진과 주의할 점"
+    *   "기초연금 신청 방법, 조건과 필요 서류 총정리"
+    *   "치매안심센터 이용 방법, 무료 검진부터 돌봄 서비스까지"
+*   **광고 영역:** 애드센스 정책을 준수하는 위치에 광고 슬롯을 배치하여 수익화를 준비합니다. (헤더 하단, 콘텐츠 중간 등)
+
+## 3. 개발 진행 계획
+
+1.  **HTML 구조 개편:** 기존 'TechPop' 웹사이트의 복잡한 HTML 구조를 모두 제거하고, 시니어 친화적인 단순한 구조로 재작성합니다.
+2.  **CSS 스타일 재작성:** 가독성과 신뢰도에 초점을 맞춘 새로운 CSS 스타일시트를 작성합니다.
+3.  **콘텐츠 교체:** 시니어 정책 정보에 맞는 실제적인 예시 텍스트로 모든 콘텐츠를 교체합니다.
+4.  **불필요한 파일 정리:** 기존 사이트에서 사용되던 JavaScript 파일(`main.js`) 등 불필요한 자원을 정리합니다.

@@ -2,25 +2,25 @@
 
 @layer base {
   :root {
-    /* OKLCH Colors */
-    --brand-hue: 260;
-    --bg-color: oklch(20% 0.05 var(--brand-hue));
-    --text-color: oklch(95% 0.02 var(--brand-hue));
-    --accent-color: oklch(70% 0.2 var(--brand-hue));
-    --accent-glow: oklch(70% 0.2 var(--brand-hue) / 0.5);
+    /* High Contrast & Readability Colors */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8F9FA;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --brand-primary: #0056B3; /* Trustworthy Blue */
+    --accent-color: #E63946;
     
-    /* Glassmorphism */
-    --glass-bg: oklch(100% 0 0 / 0.05);
-    --glass-border: oklch(100% 0 0 / 0.1);
-    --glass-blur: blur(12px);
+    /* Senior-Friendly Typography */
+    --font-size-base: 20px; /* Larger base font */
+    --font-size-lg: 28px;
+    --font-size-xl: 40px;
+    --line-height: 1.6;
+    --font-family: 'Noto Sans KR', sans-serif;
     
-    /* Spacing & Typography */
-    --spacing-xs: 0.5rem;
+    /* Spacing */
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    
-    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --spacing-lg: 3rem;
   }
 
   * {
@@ -30,139 +30,92 @@
   }
 
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-main);
-    overflow-x: hidden;
-    min-height: 100vh;
-    position: relative;
-  }
-
-  /* Noise Texture Overlay */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3*Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 1000;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+    -webkit-font-smoothing: antialiased;
   }
 }
 
 @layer components {
-  /* Glass Card Component Styles */
-  .glass-card {
-    background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--glass-border);
-    border-radius: 1.5rem;
-    padding: var(--spacing-md);
-    box-shadow: 0 8px 32px 0 oklch(0% 0 0 / 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 48px 0 oklch(0% 0 0 / 0.4);
-    border-color: var(--accent-glow);
-  }
-
-  /* Interactive Button with Glow */
-  .btn-primary {
-    background: var(--accent-color);
-    color: oklch(10% 0.05 var(--brand-hue));
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 12px var(--accent-glow);
-  }
-
-  .btn-primary:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 24px var(--accent-glow);
-  }
-
-  /* Navigation Bar */
-  .nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
-    z-index: 100;
-    background: oklch(20% 0.05 var(--brand-hue) / 0.8);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--glass-border);
-  }
-
-  /* Hero Section */
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* Clear Header */
+  .main-header {
+    background-color: var(--brand-primary);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-sm);
     text-align: center;
-    padding: var(--spacing-lg);
-    position: relative;
-    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
-  .hero h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+  .main-header h1 {
+    font-size: var(--font-size-xl);
     font-weight: 800;
-    margin-bottom: var(--spacing-sm);
-    background: linear-gradient(to bottom right, #fff, var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
-  .hero p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    opacity: 0.8;
+  /* News Card */
+  .news-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: var(--spacing-md);
     margin-bottom: var(--spacing-md);
+    border: 2px solid #E0E0E0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .news-card:hover {
+    border-color: var(--brand-primary);
+    transform: translateY(-2px);
+  }
+
+  .news-card h2 {
+    font-size: var(--font-size-lg);
+    color: var(--brand-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .news-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .news-card .date {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  /* Accessibility Button */
+  .btn-action {
+    background-color: var(--brand-primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .btn-action:hover {
+    background-color: #004494;
   }
 }
 
 @layer utilities {
-  /* Container Queries Example */
-  .dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
-    container-type: inline-size;
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-sm);
   }
 
-  @container (min-width: 600px) {
-    .glass-card {
-      padding: var(--spacing-lg);
-    }
-  }
-
-  /* :has() Selector Example */
-  .glass-card:has(.btn-primary:hover) {
-    border-color: var(--accent-color);
-  }
+  .text-center { text-align: center; }
+  .mt-lg { margin-top: var(--spacing-lg); }
 }
 
-/* Three.js Canvas Container */
-#bg-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
+/* Subresource Integrity/Security Note: Using standard fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');

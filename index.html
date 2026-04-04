@@ -1,43 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JAMNA | Interactive Experience</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>시니어 정책 정보센터 | 어르신을 위한 알기 쉬운 정책 뉴스</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <div id="bg-canvas"></div>
-  
-  <nav-bar></nav-bar>
+  <header class="main-header">
+    <div class="container">
+      <h1>시니어 정책 정보센터</h1>
+      <p style="margin-top: 0.5rem; font-weight: 400;">어르신들께 꼭 필요한 정부 복지 및 건강 정보를 한곳에 모았습니다.</p>
+    </div>
+  </header>
 
-  <main>
-    <section class="hero">
-      <h1>The Future of Web is Here</h1>
-      <p>A high-performance, immersive experience built with modern web standards. No frameworks, just pure speed and aesthetics.</p>
-      <div class="cta">
-        <button class="btn-primary">Explore Now</button>
-      </div>
+  <main class="container">
+    <section id="ad-top" style="margin-bottom: var(--spacing-md); text-align: center; padding: 1rem; background: #f0f0f0; border: 1px dashed #ccc;">
+      <p style="font-size: 0.9rem; color: #777;">[여기에 광고가 표시될 예정입니다]</p>
     </section>
 
-    <div class="dashboard-grid">
-      <glass-card title="Modularity">
-        <p>Built with native Web Components for maximum encapsulation and reusability across the platform.</p>
-      </glass-card>
-      
-      <glass-card title="Performance">
-        <p>Leveraging Baseline features like OKLCH, Container Queries, and :has() for a lightweight, fast-loading experience.</p>
-      </glass-card>
-      
-      <glass-card title="Immersion">
-        <p>Integrating Three.js for interactive 3D graphics that respond to user presence and interaction.</p>
-      </glass-card>
+    <div id="news-list">
+      <article class="news-card">
+        <span class="date">2026.04.03</span>
+        <h2>2026년 달라지는 시니어 복지, 꼭 챙겨야 할 5가지</h2>
+        <p>올해부터 기초연금이 인상되고 어르신 일자리가 늘어납니다. 놓치면 아까운 5가지 핵심 혜택을 시니어 눈높이에서 정리했습니다.</p>
+        <button class="btn-action">자세히 읽어보기</button>
+      </article>
+
+      <article class="news-card">
+        <span class="date">2026.04.02</span>
+        <h2>기초연금 신청 방법, 조건과 필요 서류 총정리</h2>
+        <p>복잡한 기초연금 신청, 이제 어렵지 않습니다. 소득 인정액 기준부터 가까운 주민센터 방문 시 챙겨야 할 서류까지 차근차근 알려드립니다.</p>
+        <button class="btn-action">자세히 읽어보기</button>
+      </article>
+
+      <article class="news-card">
+        <span class="date">2026.04.01</span>
+        <h2>올해 꼭 받아야 할 국가건강검진과 주의할 점</h2>
+        <p>건강이 최고입니다. 짝수년생 어르신들을 위한 국가건강검진 항목과 검진 전 금식 등 꼭 지켜야 할 사항들을 확인해 보세요.</p>
+        <button class="btn-action">자세히 읽어보기</button>
+      </article>
+
+      <article class="news-card">
+        <span class="date">2026.03.31</span>
+        <h2>치매안심센터 이용 방법, 무료 검진부터 돌봄 서비스까지</h2>
+        <p>전국 어디서나 이용할 수 있는 치매안심센터! 기억력 검사부터 조기 진단, 가족 지원 서비스까지 무료로 누릴 수 있는 혜택을 소개합니다.</p>
+        <button class="btn-action">자세히 읽어보기</button>
+      </article>
     </div>
+
+    <section id="ad-bottom" style="margin-top: var(--spacing-lg); text-align: center; padding: 1rem; background: #f0f0f0; border: 1px dashed #ccc;">
+      <p style="font-size: 0.9rem; color: #777;">[여기에 광고가 표시될 예정입니다]</p>
+    </section>
+
+    <section class="mt-lg text-center" style="padding: var(--spacing-md); background: #eee; border-radius: 12px; border: 1px solid #ddd;">
+      <p style="font-size: 1.1rem; color: #555;">본 정보는 <strong>대한민국 정책브리핑</strong>의 공공누리 제1유형 자료를 활용하여 어르신들의 눈높이에 맞춰 재구성되었습니다.</p>
+    </section>
   </main>
 
-  <script type="module" src="/main.js"></script>
+  <footer class="container text-center" style="margin-top: var(--spacing-lg); border-top: 1px solid #ddd; padding-top: var(--spacing-md); color: #888; font-size: 0.9rem;">
+    <p>&copy; 2026 시니어 정책 정보센터 - 따뜻한 마음으로 전하는 소식</p>
+  </footer>
+
+  <script src="/main.js"></script>
 </body>
 </html>

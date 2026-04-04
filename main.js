@@ -101,7 +101,7 @@ class SiteHeader extends HTMLElement {
             </style>
             <header class="site-header">
                 <div class="site-header__wrapper">
-                    <a href="/" class="site-header__logo">👵 시니어 정보센터</a>
+                    <a href="/" class="site-header__logo">시니어 정보센터</a>
                     <nav class="site-header__nav">
                         <a href="/#main-content">최신 정보</a>
                         <a href="/#quick-links-title">자주 찾는 서비스</a>

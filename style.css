@@ -211,6 +211,51 @@ section {
     margin-bottom: 1rem;
 }
 
+.banner-section {
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe4c4 100%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.banner-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.banner-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #d35400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.banner-line {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .banner-content {
+        flex-direction: column;
+    }
+    .banner-text {
+        font-size: 2rem;
+    }
+}
+
 /*=============================================*
  * R E S P O N S I V E
  *=============================================*/

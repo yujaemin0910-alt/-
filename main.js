@@ -260,7 +260,7 @@ class ArticleCard extends HTMLElement {
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
         
-        const defaultImage = 'https://images.unsplash.com/photo-1516307361252-cc30459c3987?auto=format&fit=crop&q=80&w=800';
+        const defaultImage = 'https://picsum.photos/seed/default/800/600';
         const cardImage = image || defaultImage;
 
         const template = document.createElement('template');

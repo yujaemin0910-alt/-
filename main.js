@@ -259,9 +259,7 @@ class ArticleCard extends HTMLElement {
         const title = this.getAttribute('title');
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
-        
-        const defaultImage = 'https://picsum.photos/seed/default/800/600';
-        const cardImage = image || defaultImage;
+        const isFeatured = this.hasAttribute('data-featured');
 
         const template = document.createElement('template');
         template.innerHTML = `
@@ -294,18 +292,12 @@ class ArticleCard extends HTMLElement {
                     transform: translateY(-5px);
                     box-shadow: 0 12px 24px rgba(0,0,0,0.25);
                 }
-                .image-wrapper {
-                    width: 100%;
-                    height: 250px;
-                    overflow: hidden;
-                    background-color: #ddd;
-                    position: relative;
-                }
                 .image {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: center;
+                    height: 250px;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url('${image || ''}');
+                    display: ${image ? 'block' : 'none'};
                 }
                 .icon { 
                     font-size: 4rem; 
@@ -339,57 +331,36 @@ class ArticleCard extends HTMLElement {
                 .link-area {
                     text-align: right;
                     font-weight: 900;
+                    color: #0052cc;
                     font-size: 1.4rem;
                     padding: 1.5rem 2rem;
                     background: #f0f7ff;
                     border-top: 1px solid #eee;
                 }
-                .link-area a {
-                    color: #0052cc;
-                    text-decoration: none;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    padding: 0.8rem 1.5rem;
-                    background: #0052cc;
-                    color: white;
-                    border-radius: 8px;
-                    font-weight: 900;
-                    transition: all 0.2s ease;
-                }
-                .link-area a:hover {
-                    background: #003d99;
-                    transform: scale(1.05);
-                }
-                .link-area a::after {
-                    content: "→";
-                }
                 :host([data-featured]) .link-area {
                     background: rgba(255, 255, 255, 0.1);
+                    color: #ffd700;
                     border-top: 1px solid rgba(255, 255, 255, 0.1);
-                }
-                :host([data-featured]) .link-area a {
-                    background: #ffd700;
-                    color: #1a2a6c;
-                }
-                :host([data-featured]) .link-area a:hover {
-                    background: #ffec8b;
                 }
             </style>
             <div class="card">
-                <div class="image-wrapper">
-                    <img class="image" src="${cardImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
-                </div>
+                ${image ? `<div class="image"></div>` : ''}
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">
                     <h3 class="title">${title}</h3>
                     <p class="description">${description}</p>
                 </div>
-                <div class="link-area"><a href="${link || '#'}">자세히 보기</a></div>
+                <div class="link-area">자세히 보기 &rarr;</div>
             </div>
         `;
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+        
+        this.addEventListener('click', () => {
+            if (link) {
+                window.location.href = link;
+            }
+        });
     }
 }
 

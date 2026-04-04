@@ -2,36 +2,54 @@
 title: 어르신을 위한 스마트폰 활용 꿀팁 3가지
 date: 2024년 5월 22일
 description: 글씨가 작아 보기 힘들거나 스마트폰 사용이 낯선 어르신들을 위해 꼭 알아두면 좋은 유용한 기능 3가지를 소개합니다.
-image: https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=800
+image: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200
+images:
+  - https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800
+  - https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&q=80&w=800
+  - https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800
+  - https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&q=80&w=800
+  - https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?auto=format&fit=crop&q=80&w=800
 ---
 
 스마트폰, 제대로 알면 세상이 더 편리해집니다! 글씨가 작아서 답답했거나, 복잡한 기능 때문에 어려워하셨던 어르신들을 위해 아주 쉽고 유용한 스마트폰 활용 꿀팁 3가지를 준비했습니다.
 
-![스마트폰 활용](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800)
+![스마트폰](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800)
 
 ## 1. 돋보기 없이도 선명하게! '글자 크기 키우기'
+
+![글자 크기 설정](https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&q=80&w=800)
 
 작은 글씨 때문에 눈이 피로하셨나요? 설정 하나만 바꾸면 훨씬 시원하게 화면을 보실 수 있습니다.
 
 - **방법:** [설정] → [디스플레이] → [글자 크기와 스타일]에서 바를 오른쪽으로 밀어 글자 크기를 키워보세요. 
 - **꿀팁:** '굵은 글꼴' 옵션을 켜면 글자가 더 또렷하게 보입니다.
 
-![글자 크기 설정](https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800)
-
 ## 2. 복잡한 화면은 가라! '쉬운 모드' 활용하기
+
+![쉬운 모드](https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800)
 
 아이콘이 너무 작고 화면이 복잡해서 누르기 힘드셨다면 '쉬운 모드'를 사용해보세요. 화면의 아이콘이 큼직하게 변하고 메뉴가 단순해져서 사용하기 훨씬 편해집니다.
 
 - **방법:** [설정] → [디스플레이] → [쉬운 모드]를 찾아 켜주세요.
 
-![쉬운 모드](https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&q=80&w=800)
-
 ## 3. 갑자기 위급한 상황엔? 'SOS 메시지 보내기'
+
+![SOS 설정](https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&q=80&w=800)
 
 혼자 계시다가 몸이 불편하시거나 위급한 상황이 생겼을 때, 스마트폰의 전원 버튼을 빠르게 세 번 누르는 것만으로도 미리 등록한 가족에게 내 위치와 구조 요청 메시지를 보낼 수 있습니다.
 
 - **방법:** [설정] → [안전 및 긴급] → [SOS 메시지 보내기]에서 긴급 연락처를 등록해두세요.
 
-![SOS 설정](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800)
+## 4. 추가로 알아두면 좋은 기능
 
-스마트폰은 어렵지 않습니다. 하나씩 천천히 따라 해보시면서 디지털 세상의 즐거움을 느껴보세요! 궁금한 점이 있다면 자녀분들이나 가까운 디지털 교육센터를 방문해보시는 것도 좋은 방법입니다.
+![카메라](https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?auto=format&fit=crop&q=80&w=800)
+
+- **음성 비서 활용:** "안녕 Siri" 또는 "갤럭시"를 불러 음성으로 전화 걸기, 문자 보내기 가능
+- **카메라 확대:** 카메라 앱에서 두 손가락을 벌리면 손쉽게 확대 가능
+- **배경화면 변경:** 오래 누르면 배경화면을 큰 글씨나 가족 사진으로 변경 가능
+
+---
+
+### 마무리
+
+스마트폰은 어렵지 않습니다. 하나씩 천천히 따라 해보시면서 디지털 세상의 즐거움을 느껴보세요! 궁금한 점이 있다면 자녀분들이나 가까운 디지털 교육센터를 방문해보시는 것도 좋은 방법입니다. 📱

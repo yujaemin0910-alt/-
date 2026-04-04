@@ -87,6 +87,27 @@ section {
     white-space: nowrap;
 }
 
+.view-all-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 2.5rem;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+    transition: all 0.2s;
+}
+
+.view-all-btn:hover {
+    background-color: #0052cc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 102, 255, 0.4);
+}
+
 /*=============================================*
  * 2. 버튼 큼 (손 떨림 고려)
  *=============================================*/

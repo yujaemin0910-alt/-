@@ -64,10 +64,12 @@ class SiteHeader extends HTMLElement {
                     padding: 0 2rem;
                 }
                 .site-header__logo {
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                     font-weight: 900;
-                    color: #1a2a6c;
+                    color: #0066ff;
                     text-decoration: none;
+                    font-family: 'Segoe UI', 'Malgun Gothic', sans-serif;
+                    letter-spacing: 1px;
                 }
                 .site-header__nav {
                     display: flex;
@@ -158,7 +160,7 @@ class SiteHeader extends HTMLElement {
             </style>
             <header class="site-header">
                 <div class="site-header__wrapper">
-                    <a href="/" class="site-header__logo">시니어 정보센터</a>
+                    <a href="/" class="site-header__logo">Silverkorea</a>
                     <nav class="site-header__nav">
                         <a href="/#main-content">최신 정보</a>
                         <a href="/articles.html">전체 글</a>

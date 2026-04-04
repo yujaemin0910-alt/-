@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=5.0" />
-    <title>시니어 정책 정보센터</title>
-    <meta name="description" content="시니어 정책 정보센터 - 어르신을 위한 최신 복지 정책 정보를 가장 쉽고 빠르게 제공합니다." />
-    <meta property="og:title" content="시니어 정책 정보센터" />
+    <title>Silverkorea</title>
+    <meta name="description" content="Silverkorea - 어르신을 위한 최신 복지 정책 정보를 가장 쉽고 빠르게 제공합니다." />
+    <meta property="og:title" content="Silverkorea" />
     <meta property="og:description" content="2026년 달라지는 복지 혜택, 어르신을 위한 최신 핵심 정책 정보를 가장 쉽고 빠르게 확인하세요." />
     <meta property="og:image" content="https://picsum.photos/1200/630?random=og" />
     <meta property="og:url" content="https://senior-policy.kr/article.html" />
@@ -70,7 +70,7 @@
                 const content = markdown.replace(/^---\n[\s\S]+?\n---\n/, '').trim();
 
                 // --- Update Metadata & Title ---
-                document.title = `${frontmatter.title || '게시글'} - 시니어 정책 정보센터`;
+                document.title = `${frontmatter.title || '게시글'} - Silverkorea`;
                 const metaDesc = document.querySelector('meta[name="description"]');
                 if (metaDesc && frontmatter.description) {
                     metaDesc.setAttribute('content', frontmatter.description);

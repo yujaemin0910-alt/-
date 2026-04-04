@@ -565,3 +565,126 @@ section {
         width: 100%;
     }
 }
+
+/*=============================================*
+ * P O L I C Y   R E S O U R C E S
+ *=============================================*/
+
+.intro-text {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.policy-category {
+    margin-bottom: 4rem;
+}
+
+.policy-category h2 {
+    font-size: 2.2rem;
+    color: var(--color-navy);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--color-yellow);
+}
+
+.policy-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #eee;
+    transition: all 0.2s;
+}
+
+.policy-card:hover {
+    border-color: var(--color-blue);
+    box-shadow: 0 4px 12px rgba(0,82,204,0.1);
+}
+
+.policy-info h3 {
+    font-size: 1.8rem;
+    color: var(--color-navy);
+    margin: 0 0 0.5rem;
+}
+
+.policy-info p {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0 0 0.8rem;
+}
+
+.policy-org {
+    display: inline-block;
+    background: var(--color-blue);
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.policy-link {
+    background: var(--color-yellow);
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.policy-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.policy-no-link {
+    color: #888;
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.policy-tip {
+    background: #fff5e6;
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    border-left: 8px solid #ff9800;
+}
+
+.policy-tip h3 {
+    font-size: 1.8rem;
+    color: #e65100;
+    margin-top: 0;
+}
+
+.policy-tip p {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.policy-tip ul {
+    margin-top: 1rem;
+}
+
+.policy-tip li {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .policy-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+}

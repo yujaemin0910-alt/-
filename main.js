@@ -89,7 +89,7 @@ class SiteHeader extends HTMLElement {
                     <nav class="site-header__nav">
                         <a href="/#main-content">최신 정보</a>
                         <a href="/#quick-links-title">자주 찾는 서비스</a>
-                        <a href="#">정책 자료실</a>
+                        <a href="/resources.html">정책 자료실</a>
                     </nav>
                     <button class="site-header__mobile-menu-btn" aria-label="메뉴 열기">
                         <span></span>

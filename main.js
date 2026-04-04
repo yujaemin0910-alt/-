@@ -253,13 +253,30 @@ class ArticleCard extends HTMLElement {
         this.attachShadow({ mode: 'open' });
     }
 
-    connectedCallback() {
+    async connectedCallback() {
         const icon = this.getAttribute('icon');
         const image = this.getAttribute('image');
         const title = this.getAttribute('title');
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
-        const isFeatured = this.hasAttribute('data-featured');
+        
+        let cardImage = image;
+        
+        if (!cardImage && link) {
+            const articleId = link.split('id=')[1];
+            if (articleId) {
+                try {
+                    const response = await fetch(`/articles/${articleId}.md`);
+                    if (response.ok) {
+                        const text = await response.text();
+                        const imgMatch = text.match(/!\[.*?\]\((.*?)\)/);
+                        if (imgMatch) {
+                            cardImage = imgMatch[1];
+                        }
+                    }
+                } catch (e) {}
+            }
+        }
         
         const defaultImage = 'https://images.unsplash.com/photo-1516307361252-cc30459c3987?auto=format&fit=crop&q=80&w=800';
 
@@ -306,7 +323,6 @@ class ArticleCard extends HTMLElement {
                     height: 100%;
                     object-fit: cover;
                     object-position: center;
-                    display: ${image ? 'block' : 'none'};
                 }
                 .icon { 
                     font-size: 4rem; 
@@ -378,7 +394,9 @@ class ArticleCard extends HTMLElement {
                 }
             </style>
             <div class="card">
-                ${image ? `<div class="image-wrapper"><img class="image" src="${image}" alt="${title || ''}" onerror="this.src='${defaultImage}'"></div>` : ''}
+                <div class="image-wrapper">
+                    <img class="image" src="${cardImage || defaultImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
+                </div>
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">
                     <h3 class="title">${title}</h3>

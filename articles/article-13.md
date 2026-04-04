@@ -3,6 +3,8 @@ title: 돌봄통합지원법 시행에 따른 지원 대상 및 제도의 변화
 date: 2026년 4월
 description: 돌봄통합지원법의 시행에 따른 지원 대상자 선정 기준과 제도의 주요 변화를 안내합니다.
 image: https://picsum.photos/seed/care2/800/600
+source: 보건복지부, 법제처
+sourceUrl: https://www.mohw.go.kr
 ---
 
 # 돌봄통합지원법 시행에 따른 지원 대상 및 제도의 변화
@@ -51,4 +53,8 @@ image: https://picsum.photos/seed/care2/800/600
 
 ---
 
-**본 콘텐츠는 보건복지부 공식 자료를 참고하여 작성되었습니다.**
+**참고 및 공신력 있는 자료 목록**
+
+- 보건복지부 지역돌봄통합지원 안내: https://www.mohw.go.kr
+- 법제처 국가법령정보센터: https://www.law.go.kr
+- 국민건강보험공단 장기요양보험: https://www.longtermcare.or.kr

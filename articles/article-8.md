@@ -3,6 +3,8 @@ title: 2026년 무임 교통카드 발급 및 이용 안내
 date: 2026년 3월 25일
 description: 만 65세 이상 시니어를 위한 지하철 무임승차 교통카드, 발급 방법과 이용 혜택을 안내드립니다.
 image: https://picsum.photos/1200/630?random=18
+source: 보건복지부, 국토교통부
+sourceUrl: https://www.mohw.go.kr
 ---
 
 시니어분의 이동 편의를 위해 제공되는 무임 교통카드 이용 방법과 혜택을 안내드립니다.
@@ -62,6 +64,14 @@ image: https://picsum.photos/1200/630?random=18
 2. 재발급 신청 (본인 방문 필요)
 3. 수수료 납부 후 새 카드 수령
 4. 새 카드 등기우편으로 배송 (일부)
+
+---
+
+**참고 및 공신력 있는 자료 목록**
+
+- 보건복지부 노인복지 안내: https://www.mohw.go.kr
+- 국토교통부 대중교통 안내: https://www.molit.go.kr
+- 정부24 우대용 교통카드 지원: https://www.gov.kr
 
 ---
 

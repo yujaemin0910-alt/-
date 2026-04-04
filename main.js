@@ -63,8 +63,18 @@ class SiteHeader extends HTMLElement {
                 }
                 .font-controls {
                     display: flex;
+                    align-items: center;
                     gap: 0.5rem;
                     margin-left: 1rem;
+                }
+                .font-label {
+                    font-size: 0.85rem;
+                    color: #666;
+                    font-weight: 600;
+                }
+                .font-box {
+                    display: flex;
+                    gap: 2px;
                 }
                 .font-btn {
                     background: #f0f0f0;
@@ -74,6 +84,7 @@ class SiteHeader extends HTMLElement {
                     font-size: 0.9rem;
                     cursor: pointer;
                     font-weight: bold;
+                    min-width: 32px;
                 }
                 .font-btn:hover {
                     background: #e0e0e0;
@@ -136,9 +147,11 @@ class SiteHeader extends HTMLElement {
                         <a href="/#resources-section">정책 자료실</a>
                     </nav>
                     <div class="font-controls">
-                        <button class="font-btn" onclick="document.documentElement.classList.remove('font-large','font-xlarge');localStorage.setItem('fontSize','normal')">가</button>
-                        <button class="font-btn" onclick="document.documentElement.classList.add('font-large');document.documentElement.classList.remove('font-xlarge');localStorage.setItem('fontSize','large')">가</button>
-                        <button class="font-btn" onclick="document.documentElement.classList.add('font-xlarge');document.documentElement.classList.remove('font-large');localStorage.setItem('fontSize','xlarge')">가</button>
+                        <span class="font-label">글씨크기</span>
+                        <div class="font-box">
+                            <button class="font-btn" onclick="document.documentElement.classList.remove('font-large','font-xlarge');localStorage.setItem('fontSize','normal')">-</button>
+                            <button class="font-btn" onclick="document.documentElement.classList.add('font-large');document.documentElement.classList.remove('font-xlarge');localStorage.setItem('fontSize','large')">+</button>
+                        </div>
                     </div>
                     <button class="site-header__mobile-menu-btn" aria-label="메뉴 열기">
                         <span></span>

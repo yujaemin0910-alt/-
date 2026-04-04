@@ -3,6 +3,8 @@ title: 자동차 수출 물류 위기 및 정부의 산업 지원 방안
 date: 2026년 4월
 description: 중동 분쟁으로 인한 자동차 수출 물류 위기와 정부의 28조 원 규모 산업 지원 방안에 대해 알아봅니다.
 image: https://picsum.photos/seed/industry/800/600
+source: 산업통상자원부
+sourceUrl: https://www.motie.go.kr
 ---
 
 # 자동차 수출 물류 위기 및 정부의 산업 지원 방안
@@ -52,4 +54,8 @@ image: https://picsum.photos/seed/industry/800/600
 
 ---
 
-**본 콘텐츠는 산업통상자원부·관세청 공식 자료를 참고하여 작성되었습니다.**
+**참고 및 공신력 있는 자료 목록**
+
+- 산업통상자원부 정책 소식: https://www.motie.go.kr
+- 관세청 수출입 지원 안내: https://www.customs.go.kr
+- 한국무역보험공사: https://www.ksure.or.kr

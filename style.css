@@ -17,10 +17,11 @@
     --border-radius-large: 20px;
 }
 
-/* 1. 글씨 크기 (모바일: 16px, PC: 20px) */
+/* 1. 글씨 크기 (모바일: 18px, PC: 20px) - 가독성 최적화 */
 html {
-    font-size: 16px; 
+    font-size: 18px; 
     scroll-behavior: smooth;
+    text-size-adjust: 100%;
 }
 
 @media (min-width: 768px) {
@@ -29,14 +30,19 @@ html {
     }
 }
 
-/* 모바일 여백/overflow 문제 */
+/* 모바일 확대/축소 지원 */
 * {
     max-width: 100vw;
     box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: visible;
+}
+
+/* 버튼 touch-action */
+a, button {
+    touch-action: manipulation;
 }
 
 /*=============================================*

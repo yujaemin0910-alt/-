@@ -161,8 +161,8 @@ class SiteFooter extends HTMLElement {
                 <div class="site-footer__wrapper">
                     <div class="site-footer__links">
                         <a href="/about.html">센터 소개</a>
-                        <a href="#">개인정보처리방침</a>
-                        <a href="#">광고 문의</a>
+                        <a href="/privacy.html">개인정보처리방침</a>
+                        <a href="/inquiry.html">광고 문의</a>
                     </div>
                     <p class="site-footer__copyright">© ${new Date().getFullYear()} 시니어 정책 정보센터. All rights reserved.</p>
                     <p class="site-footer__disclaimer">본 사이트의 정보는 공식 발표를 기반으로 하며, 최신 정보와 다를 수 있습니다.</p>

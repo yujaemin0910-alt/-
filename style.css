@@ -503,3 +503,65 @@ section {
         font-size: 2.2rem;
     }
 }
+
+.last-updated {
+    color: #888;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.inquiry-box {
+    display: flex;
+    gap: 3rem;
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.inquiry-image {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.inquiry-text {
+    flex: 1;
+}
+
+.inquiry-text h2 {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.notice {
+    font-size: 1.3rem;
+    color: #888;
+    font-style: italic;
+    background: #fff8e6;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .inquiry-box {
+        flex-direction: column;
+    }
+    .inquiry-image {
+        width: 100%;
+    }
+}

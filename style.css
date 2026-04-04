@@ -17,16 +17,15 @@
     --border-radius-large: 20px;
 }
 
-/* 1. 글씨 크기 (모바일: 16px, PC: 18px) */
+/* 1. 글씨 크기 (모바일: 14px, PC: 16px) */
 html {
-    font-size: 16px; 
+    font-size: 14px; 
     scroll-behavior: smooth;
-    text-size-adjust: 100%;
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -36,36 +35,33 @@ html {
 }
 
 html.font-large {
-    --font-scale: 1.25;
+    --font-scale: 1.2;
 }
 
 html.font-xlarge {
-    --font-scale: 1.5;
+    --font-scale: 1.4;
 }
 
 html {
-    font-size: calc(16px * var(--font-scale));
+    font-size: calc(14px * var(--font-scale));
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: calc(18px * var(--font-scale));
+        font-size: calc(16px * var(--font-scale));
     }
 }
 
-/* 모바일 확대/축소 지원 */
-* {
-    max-width: 100vw;
+/* 모바일 overflow 방지 */
+*, *::before, *::after {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
-    overflow-x: visible;
-}
-
-/* 버튼 touch-action */
-a, button {
-    touch-action: manipulation;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /*=============================================*

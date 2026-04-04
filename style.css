@@ -688,3 +688,103 @@ section {
         gap: 1.5rem;
     }
 }
+
+/*=============================================*
+ * R E S O U R C E S   S E C T I O N
+ *=============================================*/
+
+.resources-section {
+    background: #fff;
+    padding: 5rem 2rem;
+    margin-top: 4rem;
+}
+
+.resources-intro {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resources-category {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+}
+
+.resources-category h3 {
+    font-size: 2rem;
+    color: var(--color-navy);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--color-yellow);
+}
+
+.resources-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.resources-table th {
+    background: var(--color-navy);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: left;
+    font-weight: 900;
+}
+
+.resources-table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.resources-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.resources-table tr:hover {
+    background: #e8f4ff;
+}
+
+.resources-table a {
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.resources-table a:hover {
+    text-decoration: underline;
+}
+
+.resources-tip {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff5e6;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border-left: 8px solid #ff9800;
+}
+
+.resources-tip p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .resources-table {
+        font-size: 1.2rem;
+    }
+    .resources-table th,
+    .resources-table td {
+        padding: 1rem 0.8rem;
+    }
+}

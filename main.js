@@ -260,6 +260,8 @@ class ArticleCard extends HTMLElement {
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
         const isFeatured = this.hasAttribute('data-featured');
+        
+        const defaultImage = 'https://images.unsplash.com/photo-1516307361252-cc30459c3987?auto=format&fit=crop&q=80&w=800';
 
         const template = document.createElement('template');
         template.innerHTML = `
@@ -292,11 +294,18 @@ class ArticleCard extends HTMLElement {
                     transform: translateY(-5px);
                     box-shadow: 0 12px 24px rgba(0,0,0,0.25);
                 }
-                .image {
+                .image-wrapper {
+                    width: 100%;
                     height: 250px;
-                    background-size: cover;
-                    background-position: center;
-                    background-image: url("${image || ''}");
+                    overflow: hidden;
+                    background-color: #e0e0e0;
+                    position: relative;
+                }
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
                     display: ${image ? 'block' : 'none'};
                 }
                 .icon { 
@@ -369,7 +378,7 @@ class ArticleCard extends HTMLElement {
                 }
             </style>
             <div class="card">
-                ${image ? `<div class="image"></div>` : ''}
+                ${image ? `<div class="image-wrapper"><img class="image" src="${image}" alt="${title || ''}" onerror="this.src='${defaultImage}'"></div>` : ''}
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">
                     <h3 class="title">${title}</h3>

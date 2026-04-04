@@ -84,7 +84,7 @@ section {
     color: var(--color-navy);
     text-align: center;
     margin-bottom: 2rem;
-    word-break: keep-all;
+    white-space: nowrap;
 }
 
 /*=============================================*
@@ -150,9 +150,10 @@ section {
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4rem;
-    max-width: 1000px;
+    gap: 3rem;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .article-card {
@@ -165,22 +166,25 @@ section {
     color: inherit;
     display: flex;
     flex-direction: column;
+    min-width: 0;
 }
 
 .article-card__image {
-    height: 300px;
+    height: 180px;
     background-size: cover;
     background-position: center;
 }
 
 .article-card__content {
-    padding: 3rem;
+    padding: 1.5rem;
+    overflow: hidden;
 }
 
 .article-card__title {
     font-size: 1.1rem;
     color: var(--color-navy);
     margin-bottom: 0.8rem;
+    overflow-wrap: normal;
     word-break: keep-all;
 }
 

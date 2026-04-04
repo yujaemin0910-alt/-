@@ -251,23 +251,26 @@ section {
 /* 자주 찾는 서비스 - 세련된 카드 디자인 */
 .quick-links-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto 4rem;
 }
 
 .quick-link-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    background: #1a1f2e;
-    border: 1px solid rgba(255,255,255,0.1);
+    justify-content: center;
+    gap: 1rem;
+    background: #fff;
+    border: 1px solid #eee;
     border-radius: 16px;
-    padding: 1.8rem 2rem;
+    padding: 2rem 1.5rem;
     text-decoration: none;
-    color: #fff;
+    color: #1a2a6c;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .quick-link-card:hover {
@@ -276,36 +279,23 @@ section {
     box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
 }
 
-.quick-link-icon {
+.quick-link-emoji {
     font-size: 2.5rem;
-    flex-shrink: 0;
 }
 
-.quick-link-content {
-    flex: 1;
-    min-width: 0;
+.quick-link-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a2a6c;
 }
 
-.quick-link-content h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 0 0.3rem;
-    color: #fff;
+@media (max-width: 768px) {
+    .quick-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.quick-link-content p {
-    font-size: 0.95rem;
-    color: #8899aa;
-    margin: 0;
-}
-
-.quick-link-arrow {
-    font-size: 1.5rem;
-    color: #0066ff;
-    flex-shrink: 0;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .quick-links-grid {
         grid-template-columns: 1fr;
     }
@@ -904,21 +894,10 @@ section {
  *=============================================*/
 
 .about-section {
-    background: #0a0f1c;
+    background: #f8f9fc;
     padding: 8rem 2rem;
     position: relative;
     overflow: hidden;
-}
-
-.about-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
-    pointer-events: none;
 }
 
 .about-container {
@@ -936,7 +915,7 @@ section {
 .about-title {
     font-size: 3.5rem;
     font-weight: 900;
-    color: #fff;
+    color: #1a2a6c;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
 }
@@ -959,7 +938,7 @@ section {
 
 .about-subtitle {
     font-size: 1.4rem;
-    color: rgba(255,255,255,0.6);
+    color: #666;
     margin: 0;
 }
 
@@ -971,10 +950,10 @@ section {
 }
 
 .about-card {
-    background: #1a1f2e;
-    border: 1px solid rgba(255,255,255,0.15);
+    background: #fff;
+    border: 1px solid #eee;
     border-radius: 20px;
-    padding: 3rem 2rem;
+    padding: 3rem 2.5rem;
     text-align: left;
     transition: all 0.3s ease;
 }
@@ -988,7 +967,7 @@ section {
 .card-number {
     font-size: 4rem;
     font-weight: 900;
-    color: rgba(0, 102, 255, 0.3);
+    color: #0066ff;
     margin-bottom: 1rem;
     line-height: 1;
 }
@@ -996,13 +975,13 @@ section {
 .about-card h3 {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #fff;
+    color: #1a2a6c;
     margin-bottom: 1rem;
 }
 
 .about-card p {
     font-size: 1.1rem;
-    color: #b8c5d6;
+    color: #555;
     line-height: 1.7;
     margin: 0;
 }
@@ -1013,9 +992,9 @@ section {
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem;
-    background: rgba(255,255,255,0.03);
+    background: rgba(0, 102, 255, 0.05);
     border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(0, 102, 255, 0.1);
 }
 
 .sources-label {
@@ -1028,7 +1007,7 @@ section {
 
 .sources-text {
     font-size: 1rem;
-    color: rgba(255,255,255,0.5);
+    color: #0066ff;
 }
 
 @media (max-width: 900px) {

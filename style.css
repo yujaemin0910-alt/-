@@ -241,6 +241,14 @@ section {
     box-shadow: var(--shadow-strong);
 }
 
+.article-featured-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
 .article-header {
     margin-bottom: 4rem;
     padding-bottom: 2rem;
@@ -282,9 +290,111 @@ section {
     margin-bottom: 2.5rem;
 }
 
+.article-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+}
+
+.article-body table th,
+.article-body table td {
+    padding: 1.2rem;
+    border: 2px solid #eee;
+    text-align: left;
+}
+
+.article-body table th {
+    background: var(--color-navy);
+    color: white;
+}
+
+.article-body table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.article-body blockquote {
+    background: #f0f7ff;
+    border-left: 8px solid var(--color-blue);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0 12px 12px 0;
+    font-style: normal;
+}
+
 .article-body strong {
     color: var(--color-blue);
     font-weight: 900;
+}
+
+.article-body code {
+    background: #f4f4f4;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.article-body pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 2rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.article-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+.article-body ul,
+.article-body ol {
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.article-body li {
+    margin-bottom: 1rem;
+}
+
+.article-body a {
+    color: var(--color-blue);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.article-body a:hover {
+    color: var(--color-navy);
+}
+
+.article-body hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 3rem 0;
+}
+
+.article-body h3 {
+    font-size: 2.2rem;
+    color: var(--color-navy);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-body h4 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Source Disclaimer Style */

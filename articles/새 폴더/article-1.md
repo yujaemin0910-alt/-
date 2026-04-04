@@ -2,7 +2,7 @@
 title: 2026년 달라지는 시니어 복지, 꼭 챙겨야 할 5가지
 date: 2024년 5월 20일
 description: 기초연금 인상, 일자리 확대 등 2026년부터 달라지는 어르신을 위한 핵심 복지 혜택 5가지를 자세히 알려드립니다.
-image: https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200
+image: https://images.unsplash.com/photo-1516307361252-cc30459c3987?auto=format&fit=crop&q=80&w=800
 images:
   - https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800
   - https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800

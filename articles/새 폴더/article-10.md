@@ -2,7 +2,7 @@
 title: 우리나라 라면·딸기 없어서 못 판다? 코스피 식품주 드디어 오를까!
 date: 2026년 4월 3일
 description: 전 세계가 우리 K-푸드에 푹 빠졌습니다! 라면, 과자부터 딸기, 배까지 역대급 수출 기록을 세우고 있는 현황과 주식 시장 전망을 전해드립니다.
-image: https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&q=80&w=1200
+image: https://images.unsplash.com/photo-1511690656153-ec4530009c95?auto=format&fit=crop&q=80&w=800
 images:
   - https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&q=80&w=800
   - https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=800

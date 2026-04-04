@@ -3,21 +3,11 @@ title: 2026년 무임 교통카드 발급 및 이용 안내
 date: 2026년 3월 25일
 description: 만 65세 이상 시니어를 위한 지하철 무임승차 교통카드, 발급 방법과 이용 혜택을 안내드립니다.
 image: https://picsum.photos/1200/630?random=18
-images:
-  - https://picsum.photos/800/450?random=18a
-  - https://picsum.photos/800/450?random=18b
-  - https://picsum.photos/800/450?random=18c
-  - https://picsum.photos/800/450?random=18d
-  - https://picsum.photos/800/450?random=18e
 ---
 
 시니어분의 이동 편의를 위해 제공되는 무임 교통카드 이용 방법과 혜택을 안내드립니다.
 
-![지하철](https://picsum.photos/800/450?random=18a)
-
 ## 1. 발급 대상 및 기본 혜택
-
-![교통카드](https://picsum.photos/800/450?random=18b)
 
 대한민국 국민 중 **만 65세 이상**이라면 누구나 신청 가능합니다. 전국 지하철(수도권, 부산, 대구, 광주, 대전 등)을 무료로 이용할 수 있으며, 일부 지자체에서는 시내버스 이용 혜택도 확대하고 있습니다.
 
@@ -32,8 +22,6 @@ images:
 | 대전 | 무료 | 무료 | 무료 |
 
 ## 2. 발급 신청 방법
-
-![주민센터](https://picsum.photos/800/450?random=18c)
 
 ### 방문 신청
 
@@ -51,8 +39,6 @@ images:
 
 ## 3. 사용 시 주의사항
 
-![주의사항](https://picsum.photos/800/450?random=18d)
-
 ### 반드시 지켜야 할 사항
 
 - **본인만 사용:** 무임 카드는 반드시 본인만 사용해야 합니다. 타인에게 대여하거나 양도할 경우 카드가 정지되고 과태료가 부과될 수 있습니다.
@@ -67,8 +53,6 @@ images:
 | 미신고 양도 | 5만원 |
 
 ## 4. 분실 및 재발급
-
-![카드 재발급](https://picsum.photos/800/450?random=18e)
 
 카드를 분실했을 때는 즉시 발급처에 신고하여 정지시켜야 합니다. 재발급 시에는 소정의 수수료가 발생할 수 있습니다.
 

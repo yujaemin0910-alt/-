@@ -2,22 +2,12 @@
 title: K-푸드 수출 호황과 식품주 시장 전망
 date: 2026년 4월 3일
 description: 라면, 과자부터 딸기, 배까지 역대급 수출 기록을 세우고 있는 K-푸드의 현황과 코스피 식품주 시장 전망을 안내드립니다.
-image: https://picsum.photos/800/500?random=20
-images:
-  - https://picsum.photos/800/450?random=20a
-  - https://picsum.photos/800/450?random=20b
-  - https://picsum.photos/800/450?random=20c
-  - https://picsum.photos/800/450?random=20d
-  - https://picsum.photos/800/450?random=20e
+image: https://picsum.photos/1200/630?random=20
 ---
 
 전 세계적으로 한국 음식에 대한 관심이 높아지면서 K-푸드 수출이 급증하고 있습니다. 라면부터 과자, 그리고 딸기와 배까지 역대급 수출 기록을 세우고 있는 현황을 정리했습니다.
 
-![K-푸드](https://picsum.photos/800/450?random=20a)
-
 ## 1. K-푸드 수출 현황
-
-![라면](https://picsum.photos/800/450?random=20b)
 
 가장 눈에 띄는 것은 **라면** 수출입니다. 올해 1분기에만 4억 달러 이상 팔려나가며 전년 대비 26퍼센트 증가했습니다.
 
@@ -34,8 +24,6 @@ images:
 
 ## 2. 한국 과일 수출 현황
 
-![딸기](https://picsum.photos/800/450?random=20c)
-
 신선한 한국 과일들도 해외 시장에서 인기를 얻고 있습니다.
 
 - **딸기:** 동남아 시장에서 품질을 인정받아 20퍼센트 이상 수출이 늘었습니다.
@@ -48,8 +36,6 @@ images:
 
 ## 3. 중동 시장 확대
 
-![시장](https://picsum.photos/800/450?random=20d)
-
 중동 지역이 가장 높은 증가율인 32.3퍼센트를 기록했습니다. 정부에서도 물류비 지원과 전용 바우처(쿠폰) 등 지원을 아끼지 않고 있습니다.
 
 ### 중동 인기 K-푸드
@@ -59,8 +45,6 @@ images:
 - 보리차, 유자차
 
 ## 4. 코스피 식품주 전망
-
-![투자](https://picsum.photos/800/450?random=20e)
 
 수출이 호조되면서 식품 회사들의 실적 개선에 대한 기대가 커지고 있습니다. 주식 시장에서 식품 관련 종목들의 움직임에 관심을 가져보시는 것도 좋겠습니다.
 

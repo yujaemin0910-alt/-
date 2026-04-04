@@ -63,7 +63,6 @@
 
                 // --- Render HTML ---
                 let html = `
-                    ${frontmatter.image ? `<img class="article-featured-image" src="${frontmatter.image}" alt="${frontmatter.title || ''}">` : ''}
                     <div class="article-header">
                         <h1 class="article-title">${frontmatter.title || '제목 없음'}</h1>
                         <p class="article-meta">게시일: ${frontmatter.date || '날짜 없음'}</p>

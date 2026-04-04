@@ -206,45 +206,45 @@ class CookieConsent extends HTMLElement {
             <style>
                 .cookie-consent {
                     position: fixed;
-                    bottom: 2rem;
-                    left: 2rem;
-                    right: 2rem;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                     background: #fff;
-                    padding: 2rem;
-                    border-radius: 12px;
-                    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+                    padding: 1.5rem;
+                    box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     z-index: 9999;
-                    border: 2px solid #eee;
+                    border-top: 2px solid #eee;
                     font-family: 'Pretendard', sans-serif;
                 }
                 .cookie-consent p {
                     margin: 0;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     color: #333;
+                    flex: 1;
                 }
                 .btn-accept {
                     background: #0052cc;
                     color: white;
                     border: none;
-                    padding: 1rem 2rem;
+                    padding: 0.8rem 1.5rem;
                     border-radius: 8px;
                     font-weight: bold;
                     cursor: pointer;
                     white-space: nowrap;
-                    margin-left: 2rem;
+                    font-size: 1rem;
                 }
-                @media (max-width: 600px) {
+                @media (max-width: 480px) {
                     .cookie-consent {
                         flex-direction: column;
+                        gap: 1rem;
                         text-align: center;
-                        gap: 1.5rem;
                     }
                     .btn-accept {
-                        margin-left: 0;
                         width: 100%;
+                        padding: 1rem;
                     }
                 }
             </style>

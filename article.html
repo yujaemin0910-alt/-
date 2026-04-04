@@ -62,11 +62,15 @@
                 }
 
                 // --- Render HTML ---
+                const articleImage = frontmatter.image ? 
+                    `<img src="${frontmatter.image}" alt="${frontmatter.title}" style="width:100%; max-height:400px; object-fit:cover; border-radius:12px; margin-bottom:2rem;">` : '';
+                
                 let html = `
                     <div class="article-header">
                         <h1 class="article-title">${frontmatter.title || '제목 없음'}</h1>
                         <p class="article-meta">게시일: ${frontmatter.date || '날짜 없음'}</p>
                     </div>
+                    ${articleImage}
                     <div class="article-body">
                         ${marked.parse(content)}
                         

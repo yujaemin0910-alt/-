@@ -20,6 +20,7 @@
 /* 1. 글씨 크기 큼 (최소 20px) */
 html {
     font-size: 20px; 
+    scroll-behavior: smooth;
 }
 
 body {

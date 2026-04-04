@@ -1,3 +1,19 @@
+// ===== Smooth Scroll Animation =====
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (link) {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+});
+
 // ===== <site-header> =====
 class SiteHeader extends HTMLElement {
     constructor() {

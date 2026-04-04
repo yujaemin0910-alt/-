@@ -296,7 +296,7 @@ class ArticleCard extends HTMLElement {
                     height: 250px;
                     background-size: cover;
                     background-position: center;
-                    background-image: url('${image || ''}');
+                    background-image: url("${image || ''}");
                     display: ${image ? 'block' : 'none'};
                 }
                 .icon { 

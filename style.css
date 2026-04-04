@@ -903,8 +903,10 @@ section {
 .about-container {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 2rem;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .about-header {

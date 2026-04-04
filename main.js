@@ -298,7 +298,7 @@ class ArticleCard extends HTMLElement {
                     width: 100%;
                     height: 250px;
                     overflow: hidden;
-                    background-color: #e0e0e0;
+                    background-color: #ddd;
                     position: relative;
                 }
                 .image {
@@ -390,22 +390,6 @@ class ArticleCard extends HTMLElement {
         `;
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        
-        if (!image && link) {
-            const articleId = link.split('id=')[1];
-            if (articleId) {
-                fetch(`/articles/${articleId}.md`)
-                    .then(r => r.text())
-                    .then(text => {
-                        const imgMatch = text.match(/!\[.*?\]\((.*?)\)/);
-                        if (imgMatch) {
-                            const img = this.shadowRoot.querySelector('.image');
-                            if (img) img.src = imgMatch[1];
-                        }
-                    })
-                    .catch(() => {});
-            }
-        }
     }
 }
 

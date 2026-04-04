@@ -253,32 +253,15 @@ class ArticleCard extends HTMLElement {
         this.attachShadow({ mode: 'open' });
     }
 
-    async connectedCallback() {
+    connectedCallback() {
         const icon = this.getAttribute('icon');
         const image = this.getAttribute('image');
         const title = this.getAttribute('title');
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
         
-        let cardImage = image;
-        
-        if (!cardImage && link) {
-            const articleId = link.split('id=')[1];
-            if (articleId) {
-                try {
-                    const response = await fetch(`/articles/${articleId}.md`);
-                    if (response.ok) {
-                        const text = await response.text();
-                        const imgMatch = text.match(/!\[.*?\]\((.*?)\)/);
-                        if (imgMatch) {
-                            cardImage = imgMatch[1];
-                        }
-                    }
-                } catch (e) {}
-            }
-        }
-        
         const defaultImage = 'https://images.unsplash.com/photo-1516307361252-cc30459c3987?auto=format&fit=crop&q=80&w=800';
+        const cardImage = image || defaultImage;
 
         const template = document.createElement('template');
         template.innerHTML = `
@@ -395,7 +378,7 @@ class ArticleCard extends HTMLElement {
             </style>
             <div class="card">
                 <div class="image-wrapper">
-                    <img class="image" src="${cardImage || defaultImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
+                    <img class="image" src="${cardImage}" alt="${title || ''}" onerror="this.src='${defaultImage}'">
                 </div>
                 ${icon ? `<div class="icon">${icon}</div>` : ''}
                 <div class="content">
@@ -407,6 +390,22 @@ class ArticleCard extends HTMLElement {
         `;
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+        
+        if (!image && link) {
+            const articleId = link.split('id=')[1];
+            if (articleId) {
+                fetch(`/articles/${articleId}.md`)
+                    .then(r => r.text())
+                    .then(text => {
+                        const imgMatch = text.match(/!\[.*?\]\((.*?)\)/);
+                        if (imgMatch) {
+                            const img = this.shadowRoot.querySelector('.image');
+                            if (img) img.src = imgMatch[1];
+                        }
+                    })
+                    .catch(() => {});
+            }
+        }
     }
 }
 

@@ -160,7 +160,7 @@ class SiteFooter extends HTMLElement {
             <footer class="site-footer">
                 <div class="site-footer__wrapper">
                     <div class="site-footer__links">
-                        <a href="#">센터 소개</a>
+                        <a href="/about.html">센터 소개</a>
                         <a href="#">개인정보처리방침</a>
                         <a href="#">광고 문의</a>
                     </div>

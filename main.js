@@ -59,11 +59,12 @@ class ArticleCard extends HTMLElement {
         const title = this.getAttribute('title') || '제목 없음';
         const description = this.getAttribute('description') || '내용 없음';
         const link = this.getAttribute('link') || '#';
+        const image = this.getAttribute('image');
         const isFeatured = this.hasAttribute('data-featured');
 
         this.innerHTML = `
             <a href="${link}" class="article-card ${isFeatured ? 'article-card--featured' : ''}">
-                <div class="article-card__icon">${icon}</div>
+                ${image ? `<div class="article-card__image" style="background-image: url('${image}')"></div>` : `<div class="article-card__icon">${icon}</div>`}
                 <div class="article-card__content">
                     <h3 class="article-card__title">${title}</h3>
                     <p class="article-card__description">${description}</p>

@@ -122,17 +122,18 @@ section {
 
 .hero-content .subtitle {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     color: var(--color-yellow);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero-content .title {
     display: block;
-    font-size: 4rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.2;
+    word-break: keep-all;
 }
 
 .hero-content .description {

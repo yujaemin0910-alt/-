@@ -263,8 +263,8 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: #fff;
-    border: 1px solid #eee;
+    background: #e6f0ff;
+    border: 1px solid #b3d4ff;
     border-radius: 16px;
     padding: 2rem 1.5rem;
     text-decoration: none;
@@ -274,6 +274,7 @@ section {
 }
 
 .quick-link-card:hover {
+    background: #d4e5ff;
     border-color: #0066ff;
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);

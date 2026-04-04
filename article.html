@@ -72,6 +72,9 @@
                 const articleImage = frontmatter.image ? 
                     `<img src="${frontmatter.image}" alt="${frontmatter.title}" style="width:100%; max-height:250px; object-fit:cover; border-radius:8px; margin-bottom:1rem;">` : '';
                 
+                const sourceText = frontmatter.source || '대한민국 정책 브리핑';
+                const sourceUrl = frontmatter.sourceUrl || 'https://www.korea.kr/';
+                
                 let html = `
                     <div class="article-header">
                         <h1 class="article-title">${frontmatter.title || '제목 없음'}</h1>
@@ -82,7 +85,7 @@
                         ${marked.parse(content)}
                         
                         <div class="article-source">
-                            <p>※ 본 콘텐츠는 <strong>대한민국 정책 브리핑</strong>(<a href="https://www.korea.kr/" target="_blank" rel="noopener noreferrer">www.korea.kr</a>)의 자료를 참고하여 작성되었습니다.</p>
+                            <p>※ 본 콘텐츠는 <strong>${sourceText}</strong>(<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceUrl.replace('https://','')}</a>)의 자료를 참고하여 작성되었습니다.</p>
                         </div>
 
                         <a href="/" class="btn-primary btn-back">목록으로 돌아가기</a>

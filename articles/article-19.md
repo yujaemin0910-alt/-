@@ -1,6 +1,6 @@
 ---
 title: 자동차 수출 물류 위기 및 정부의 산업 지원 방안
-date: 2026년 4월
+date: 2026년 4월 11일
 description: 자동차 수출 물류 위기 극복을 위한 정부의 28조 원 규모 긴급 지원 방안
 image: https://picsum.photos/1200/630?random=19
 source: 산업통상자원부

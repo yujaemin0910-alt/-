@@ -1,6 +1,6 @@
 ---
 title: 60대라면 꼭 알아야 할 2026년 복지 변화 5가지
-date: 2026년 4월
+date: 2026년 4월 1일
 description: 기초연금 인상, 일자리 확대 등 2026년부터 시행되는 시니어 핵심 복지 혜택 5가지를 상세히 안내합니다.
 image: https://picsum.photos/1200/630?random=11
 source: 보건복지부

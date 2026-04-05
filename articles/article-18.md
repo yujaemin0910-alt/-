@@ -1,6 +1,6 @@
 ---
 title: 돌봄통합지원법 시행에 따른 지원 대상 및 제도의 변화
-date: 2026년 4월
+date: 2026년 3월 29일
 description: 2026년 돌봄통합지원법 본격 시행 - 지원 대상 확대 및 지역사회 통합 돌봄의 변화 상세 안내
 image: https://picsum.photos/1200/630?random=18
 source: 보건복지부, 법제처

@@ -1,6 +1,6 @@
 ---
 title: 노안을 늦추는 최고의 생활 습관 5가지
-date: 2026년 4월
+date: 2026년 4월 9일
 description: 노안 예방과 눈 건강을 위한 과학적인 생활 습관 가이드 - 20-20-20 법칙부터 영양소 섭취까지 상세 안내
 image: https://picsum.photos/1200/630?random=16
 source: 미국안과학회, 식품의약품안전처

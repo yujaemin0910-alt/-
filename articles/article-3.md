@@ -1,6 +1,6 @@
 ---
 title: 기초연금, 신청 대상과 수령액 확인 방법
-date: 2026년 4월
+date: 2026년 4월 2일
 description: 기초연금 수급 조건과 소득인정액 기준, 신청 방법과 예상 수령액을 안내드립니다.
 image: https://picsum.photos/1200/630?random=13
 source: 보건복지부

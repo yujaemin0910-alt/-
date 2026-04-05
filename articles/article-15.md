@@ -1,6 +1,6 @@
 ---
 title: 무료로 즐기는 취미 교실, 집 근처 어디 있을까?
-date: 2026년 4월 8일
+date: 2026년 4월 3일
 description: 시니어를 위한 무료 여가 활동 가이드 - 복지관, 문화기관, 숲 체험까지 다양한 무료 프로그램을 소개합니다.
 image: https://picsum.photos/1200/630?random=15
 source: 통계청

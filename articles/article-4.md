@@ -1,6 +1,6 @@
 ---
 title: 2026년 노인 일자리 신청 방법 안내
-date: 2026년 4월 5일
+date: 2026년 4월 1일
 description: 정부에서 지원하는 2026년 시니어 일자리, 신청 시기, 장소, 준비물과 절차를 안내드립니다.
 image: https://picsum.photos/1200/630?random=14
 source: 보건복지부

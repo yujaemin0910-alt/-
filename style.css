@@ -1068,3 +1068,34 @@ section {
         text-align: center;
     }
 }
+
+/* 메인 페이지 페이지네이션 */
+#main-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem 0;
+}
+
+#main-pagination .page-btn {
+    padding: 0.8rem 1.2rem;
+    background: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#main-pagination .page-btn:hover {
+    background: #1a2a6c;
+    color: #fff;
+    border-color: #1a2a6c;
+}
+
+#main-pagination .page-btn.active {
+    background: #ffd700;
+    border-color: #ffd700;
+    color: #000;
+}

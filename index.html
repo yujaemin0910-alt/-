@@ -134,6 +134,7 @@
                     link="/article.html?id=article-14">
                 </article-card>
             </div>
+            <div id="main-pagination" class="pagination"></div>
         </section>
 
         <section class="quick-links-section" aria-labelledby="quick-links-title">
@@ -322,6 +323,44 @@
     <site-footer></site-footer>
     
     <cookie-consent></cookie-consent>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            showMainPage(1);
+        });
+
+        function showMainPage(page) {
+            const itemsPerPage = 8;
+            const cards = document.querySelectorAll('#article-grid article-card');
+            const totalCards = cards.length;
+            const totalPages = Math.ceil(totalCards / itemsPerPage);
+
+            cards.forEach((card, index) => {
+                const start = (page - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+                card.style.display = (index >= start && index < end) ? '' : 'none';
+            });
+
+            renderMainPagination(totalCards, page);
+        }
+
+        function renderMainPagination(totalCards, currentPage) {
+            const itemsPerPage = 8;
+            const pagination = document.getElementById('main-pagination');
+            const totalPages = Math.ceil(totalCards / itemsPerPage);
+
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="showMainPage(${i})">${i}</button>`;
+            }
+            pagination.innerHTML = html;
+        }
+    </script>
     
 </body>
 </html>

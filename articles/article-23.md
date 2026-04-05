@@ -1,7 +1,7 @@
 ---
 title: 먹는 위고비라고 속지 마세요! 식약처 식품부당행위긴급대응단 전격 출범
 date: 2026년 3월 24일
-description: 허위 건강 광고 단속을 위한 식품부당행위긴급대응단의 설립 배경과 활동內容, 시니어를 위한 안전한 쇼핑 수칙을 안내드립니다.
+description: 허위 건강 광고 단속을 위한 식품부당행위긴급대응단의 설립 배경과 활동 내용, 시니어를 위한 안전한 쇼핑 수칙을 안내드립니다.
 image: https://picsum.photos/1200/630?random=24
 source: 식품의약품안전처
 sourceUrl: https://www.mfds.go.kr

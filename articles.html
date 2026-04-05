@@ -107,6 +107,32 @@
                 flex-direction: column;
             }
         }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+        .page-btn {
+            padding: 0.8rem 1.2rem;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .page-btn:hover {
+            background: #1a2a6c;
+            color: #fff;
+            border-color: #1a2a6c;
+        }
+        .page-btn.active {
+            background: #ffd700;
+            border-color: #ffd700;
+            color: #000;
+        }
     </style>
 </head>
 <body>
@@ -269,6 +295,8 @@
             </article-card>
         </div>
 
+        <div id="pagination" class="pagination"></div>
+
         <div id="noResults" class="no-results" style="display:none;">
             검색 결과가 없습니다. 다른 검색어를 입력해 보세요.
         </div>
@@ -278,13 +306,54 @@
 
     <script>
         let currentCategory = 'all';
+        const itemsPerPage = 8;
+        let currentPage = 1;
 
         document.addEventListener('DOMContentLoaded', () => {
             const searchInput = document.getElementById('searchInput');
             searchInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') filterArticles();
             });
+            showPage(1);
         });
+
+        function showPage(page) {
+            currentPage = page;
+            const cards = document.querySelectorAll('article-card');
+            const visibleCards = Array.from(cards).filter(card => card.style.display !== 'none');
+            const totalPages = Math.ceil(visibleCards.length / itemsPerPage);
+
+            cards.forEach((card, index) => {
+                const cardIndex = Array.from(cards).indexOf(card);
+                const visibleIndex = visibleCards.indexOf(card);
+                
+                if (visibleIndex === -1) {
+                    card.style.display = 'none';
+                } else {
+                    const start = (page - 1) * itemsPerPage;
+                    const end = start + itemsPerPage;
+                    card.style.display = (visibleIndex >= start && visibleIndex < end) ? '' : 'none';
+                }
+            });
+
+            renderPagination(visibleCards.length, page);
+        }
+
+        function renderPagination(totalItems, currentPage) {
+            const pagination = document.getElementById('pagination');
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="showPage(${i})">${i}</button>`;
+            }
+            pagination.innerHTML = html;
+        }
 
         function filterCategory(category) {
             currentCategory = category;
@@ -293,6 +362,7 @@
                     (category === 'all' && tab.textContent === '전체'));
             });
             filterArticles();
+            showPage(1);
         }
 
         function getCategoryName(cat) {
@@ -323,6 +393,7 @@
             });
 
             document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+            renderPagination(visibleCount, 1);
         }
     </script>
 

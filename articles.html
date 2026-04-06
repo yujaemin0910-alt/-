@@ -320,26 +320,28 @@
         function showPage(page) {
             currentPage = page;
             const cards = document.querySelectorAll('article-card');
-            const visibleCards = Array.from(cards).filter(card => card.style.display !== 'none');
-            const totalPages = Math.ceil(visibleCards.length / itemsPerPage);
+            const visibleCards = Array.from(cards).filter(card => {
+                const category = card.getAttribute('data-category') || '';
+                const title = card.getAttribute('title') || '';
+                const description = card.getAttribute('description') || '';
+                const matchesCategory = currentCategory === 'all' || category === currentCategory;
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const matchesSearch = !searchTerm || title.toLowerCase().includes(searchTerm) || description.toLowerCase().includes(searchTerm);
+                return matchesCategory && matchesSearch;
+            });
 
             cards.forEach((card) => {
                 const visibleIndex = visibleCards.indexOf(card);
-                
-                if (visibleIndex === -1) {
-                    card.style.display = 'none';
-                } else {
-                    const start = (page - 1) * itemsPerPage;
-                    const end = start + itemsPerPage;
-                    card.style.display = (visibleIndex >= start && visibleIndex < end) ? '' : 'none';
-                }
+                const start = (page - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+                card.style.display = (visibleIndex >= start && visibleIndex < end) ? '' : 'none';
             });
 
             renderPagination(visibleCards.length, page);
             
-            requestAnimationFrame(() => {
+            setTimeout(() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+            }, 50);
         }
 
         function renderPagination(totalItems, currentPage) {

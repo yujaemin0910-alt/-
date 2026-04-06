@@ -428,6 +428,37 @@ section {
     font-weight: 900;
 }
 
+.article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+}
+
+.article-body th {
+    background-color: var(--color-navy);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    border: 1px solid #ddd;
+}
+
+.article-body td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.article-body tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.article-body tr:hover {
+    background-color: #e8f4fd;
+}
+
 /* Source Disclaimer Style */
 .article-source {
     margin: 3rem 0 2rem;

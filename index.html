@@ -420,6 +420,11 @@
             });
 
             renderMainPagination(totalCards, page);
+            
+            const articleSection = document.getElementById('main-content');
+            if (articleSection) {
+                articleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         function renderMainPagination(totalCards, currentPage) {

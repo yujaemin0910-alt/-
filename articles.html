@@ -323,8 +323,7 @@
             const visibleCards = Array.from(cards).filter(card => card.style.display !== 'none');
             const totalPages = Math.ceil(visibleCards.length / itemsPerPage);
 
-            cards.forEach((card, index) => {
-                const cardIndex = Array.from(cards).indexOf(card);
+            cards.forEach((card) => {
                 const visibleIndex = visibleCards.indexOf(card);
                 
                 if (visibleIndex === -1) {
@@ -337,6 +336,8 @@
             });
 
             renderPagination(visibleCards.length, page);
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function renderPagination(totalItems, currentPage) {

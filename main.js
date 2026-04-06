@@ -478,6 +478,7 @@ class ArticleCard extends HTMLElement {
         
         this.addEventListener('click', () => {
             if (link) {
+                sessionStorage.setItem('returnUrl', window.location.href);
                 window.location.href = link;
             }
         });

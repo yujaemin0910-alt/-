@@ -96,7 +96,7 @@
                             <p>※ 본 콘텐츠는 <strong>${sourceText}</strong>(<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceUrl.replace('https://','')}</a>)의 자료를 참고하여 작성되었습니다.</p>
                         </div>
 
-                        <a href="/" class="btn-primary btn-back">목록으로 돌아가기</a>
+                        <a href="javascript:void(0)" onclick="goBack()" class="btn-primary btn-back">목록으로 돌아가기</a>
                     </div>
                 `;
                 articleContent.innerHTML = html;
@@ -106,6 +106,16 @@
                 articleContent.innerHTML = '<p>게시글을 불러오는 중 오류가 발생했습니다. <a href="/">홈으로 돌아가기</a></p>';
             }
         });
+
+        function goBack() {
+            const returnUrl = sessionStorage.getItem('returnUrl');
+            if (returnUrl) {
+                sessionStorage.removeItem('returnUrl');
+                window.location.href = returnUrl;
+            } else {
+                window.location.href = '/';
+            }
+        }
     </script>
 
 </body>

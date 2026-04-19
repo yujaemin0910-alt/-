@@ -2,7 +2,7 @@
 title: 장기요양등급 신청 방법 총정리 — 집에서 돌봄 받는 첫걸음
 date: 2026년 4월 20일
 description: 만 65세 이상이라면 누구에게나 찾아올 수 있는 노년의 순간. 이제 가족의 부담을 나누고 정부로부터 돌봄을 받아보세요.
-image: https://picsum.photos/1200/630?random=35
+image: https://picsum.photos/1200/630?random=49
 source: 국민건강보험공단
 sourceUrl: https://www.nhis.or.kr
 ---

@@ -251,8 +251,8 @@ class SiteFooter extends HTMLElement {
                         <a href="/terms.html">이용약관</a>
                         <a href="/inquiry.html">문의</a>
                     </div>
-                    <p class="site-footer__copyright">© ${new Date().getFullYear()} 시니어 정책 정보센터. All rights reserved.</p>
-                    <p class="site-footer__disclaimer">본 사이트의 정보는 공식 발표를 기반으로 하며, 최신 정보와 다를 수 있습니다.</p>
+                    <p class="site-footer__copyright">© ${new Date().getFullYear()} Silverkorea 시니어 정책 정보센터. All rights reserved.</p>
+                    <p class="site-footer__disclaimer">본 사이트의 모든 콘텐츠는 Silverkorea에서 직접 편집·작성하였으며, 정부 공식 자료를 참고했습니다. 최신 정책 정보는 ☎ 129(정부민원안내콜센터)로 반드시 확인해 주세요.</p>
                 </div>
             </footer>
         `;
@@ -336,7 +336,7 @@ class CookieConsent extends HTMLElement {
                 }
             </style>
             <div class="cookie-consent">
-                <p>본 사이트는 사용자 경험 개선 및 통계 분석을 위해 쿠키를 사용합니다. 광고 Personalized을 위해 Third-party cookies를 사용합니다.</p>
+                <p>본 사이트는 안전한 광고 제공 및 사용자 경험 개선을 위해 쿠키를 사용합니다. 본 사이트의 모든 콘텐츠는 Silverkorea에서 직접 작성한 것입니다.</p>
                 <div class="cookie-consent-buttons">
                     <button class="btn-accept">동의</button>
                     <button class="btn-decline">거부</button>

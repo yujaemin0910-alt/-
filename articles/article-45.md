@@ -1,7 +1,7 @@
 ---
 title: 몸속에 쌓이는 미세플라스틱의 배신 - 어르신들이 꼭 알아야 할 예방 습관 3가지
 date: 2026년 4월 20일
-description: 일상 속 미세플라스틱의 위험과 예방 방법을详解합니다.
+description: 일상 속 미세플라스틱의 위험과 예방 방법을 알아봅니다.
 image: https://picsum.photos/1200/630?random=45
 source: 한국소비자원
 sourceUrl: https://www.kca.go.kr

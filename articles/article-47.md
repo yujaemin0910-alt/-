@@ -1,7 +1,7 @@
 ---
 title: 스마트폰 글씨가 안 보인다면 - 갤럭시·아이폰 글자 크게 키우는 법 총정리
 date: 2026년 4월 20일
-description: 스마트폰 글씨大小的最简单的设置方法を介绍합니다
+description: 스마트폰 글씨 크기를 크게 설정하는 가장 쉬운 방법을 알려드립니다.
 image: https://picsum.photos/1200/630?random=47
 source: 삼성전자
 sourceUrl: https://www.samsung.com

@@ -1,7 +1,7 @@
 ---
 title: 통합돌봄이 바꾼 어른의 일상 — 실제 사례와 신청 방법
 date: 2026년 4월 4일
-description: 통합돌봄 서비스의 실제 사례와 신청 방법에 대해 안내드립니다.
+description: 의사와 간호사가 집으로 직접 찾아와 어르신을 돌봐드리는 통합돌봄 서비스를 이용해 보세요. 실제 사례를 통해 신청 방법과 혜택을 알기 쉽게 설명해 드립니다. 참 편리해요.
 image: https://picsum.photos/1200/630?random=24
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

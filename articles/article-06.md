@@ -1,7 +1,7 @@
 ---
 title: 무료로 즐기는 시니어 여가 문화 활동 가이드
 date: 2026년 3월 15일
-description: 지자체와 복지관에서 제공하는 다양한 무료 여가 프로그램을 통해 활기찬 노후를 보내는 방법을 소개합니다.
+description: 노래 교실부터 요가까지, 복지관의 즐거운 무료 프로그램들을 알고 계시나요? 활기찬 노후를 위한 여가 활동과 신청 방법을 상세히 안내해 드릴게요. 우리 함께 즐겨보세요.
 image: https://picsum.photos/1200/630?random=16
 source: 통계청, 보건복지부
 sourceUrl: https://www.kostat.go.kr

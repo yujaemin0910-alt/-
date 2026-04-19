@@ -1,7 +1,7 @@
 ---
 title: 기초연금, 직접 신청해보니 이런 점은 꼭 알아두세요!
 date: 2026년 4월 7일
-description: 기초연금을 직접 신청하면서 겪은 과정을 공유합니다. 신청 전 반드시 알아두어야 할 사항들을 정리했습니다.
+description: 기초연금을 직접 신청하며 겪은 생생한 후기와 꼭 알아야 할 꿀팁을 전해드립니다. 월 최대 40만 원의 혜택을 실수 없이 한 번에 받을 수 있도록 친절하게 도와드릴게요.
 image: https://picsum.photos/1200/630?random=30
 source: 개인 경험
 sourceUrl: https://www.mohw.go.kr

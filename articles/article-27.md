@@ -1,7 +1,7 @@
 ---
 title: 2026년 어르신을 위한 냉방비 지원 신청 방법
 date: 2026년 4월 26일
-description: 2026년 냉방비 지원 신청 방법과 에너지바우처 이용 방법을 상세히 안내합니다.
+description: 무더운 여름철, 어르신들의 시원한 여름나기를 위해 정부가 냉방비를 지원해 드립니다. 전기요금 걱정 없이 에어컨을 켤 수 있도록 지원금 신청 방법을 친절하게 알려드릴게요.
 image: https://picsum.photos/1200/630?random=41
 source: 행정안전부
 sourceUrl: https://www.mois.go.kr

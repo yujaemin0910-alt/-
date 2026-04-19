@@ -1,7 +1,7 @@
 ---
 title: 어르신을 위한 스마트폰 배달 앱 사용 방법
 date: 2026년 4월 23일
-description: 어르신을 위해서 스마트폰으로 배달 앱을 사용하는 방법을 상세히 알려드리겠습니다.
+description: 음식 주문이 힘들 땐 스마트폰 배달 앱을 사용해 보세요. 어르신도 집에서 편하게 맛있는 음식을 시켜 드실 수 있도록 배달 앱 사용법을 하나하나 친절히 알려드립니다.
 image: https://picsum.photos/1200/630?random=38
 source: 과학기술정보통신부
 sourceUrl: https://www.msit.go.kr

@@ -1,7 +1,7 @@
 ---
 title: 기초연금,얼마전부알려
 date: 2026년 4월 2일
-description: 기초연금 수급 조건과 소득인정액 기준, 신청 방법과 예상 수령액을 안내드립니다.
+description: 매달 최대 40만 원을 드리는 기초연금, 신청하셨나요? 대상 확인법부터 신청 서류까지 꼼꼼히 알려드릴게요. 잊지 말고 꼭 신청해서 소중한 혜택을 모두 받으세요.
 image: https://picsum.photos/1200/630?random=13
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

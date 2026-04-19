@@ -1,7 +1,7 @@
 ---
 title: 치매 초기 증상 체크리스트와 치매안심센터 이용 방법
 date: 2026년 4월 25일
-description: 치매 초기 증상 체크리스트와 치매안심센터 이용 방법을 상세히 안내합니다.
+description: 치매가 걱정될 때 스스로 확인해 볼 수 있는 체크리스트와 치매안심센터 이용법을 소개합니다. 초기에 발견하면 충분히 관리할 수 있으니, 걱정 말고 지금 바로 확인해 보세요.
 image: https://picsum.photos/1200/630?random=40
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

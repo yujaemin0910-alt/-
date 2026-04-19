@@ -1,7 +1,7 @@
 ---
 title: 독거노인 안전 확인 서비스 신청하는 방법
 date: 2026년 4월 28일
-description: 독거노인을 위한 안전 확인 서비스 신청 방법과 긴급 상황을 대처하는 방법을 상세히 안내합니다.
+description: 혼자 계실 때 갑자기 아프면 어쩌나 걱정되시죠? 국가가 정기적으로 어르신의 안부를 확인하는 안전 서비스를 신청해 보세요. 신청 방법과 혜택을 친절하게 설명해 드릴게요.
 image: https://picsum.photos/1200/630?random=43
 source: 행정안전부
 sourceUrl: https://www.mois.go.kr

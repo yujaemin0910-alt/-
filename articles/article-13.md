@@ -1,7 +1,7 @@
 ---
 title: 무임 교통카드, 만 65세 이상이라면 발급받으세요
 date: 2026년 4월 2일
-description: 2026년 시니어 무임 교통카드 발급 방법 및 지역별 이용 혜택 총정리 - 지하철에서 버스까지 전체 가이드
+description: 만 65세 이상 어르신이라면 누구나 받을 수 있는 무임 교통카드 혜택을 놓치지 마세요. 지하철 무료 이용 등 편리한 이동을 돕는 카드 발급 방법을 친절하게 설명해 드립니다.
 image: https://picsum.photos/1200/630?random=17
 source: 국토교통부, 보건복지부
 sourceUrl: https://www.molit.go.kr

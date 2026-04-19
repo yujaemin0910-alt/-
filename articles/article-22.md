@@ -1,7 +1,7 @@
 ---
 title: 보이스피싱 당했을 때 즉시 해야 할 7가지
 date: 2026년 4월 20일
-description: 전화 한 번으로 돈이 모두 사라질 수 있습니다. 보이스피싱 피해를 당했다면 반드시 해야 할 7가지를 알려드립니다.
+description: 모르는 번호로 온 전화에 깜짝 놀라셨나요? 보이스피싱을 당했을 때 피해를 막기 위해 즉시 해야 할 7가지를 알려드립니다. 당황하지 말고 이 순서대로 꼭 따라 해 보세요.
 image: https://picsum.photos/1200/630?random=36
 source: 금융감독원
 sourceUrl: https://www.fss.or.kr

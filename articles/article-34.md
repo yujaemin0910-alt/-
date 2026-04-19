@@ -1,7 +1,7 @@
 ---
 title: 기차역 줄 서지 마세요 - 스마트폰 KTX·SRT 예매 및 경로 할인 받는 법
 date: 2026년 4월 20일
-description: 스마트폰으로 기차표 예매方法と 경로 할인 받는 방법을 알아봅니다.
+description: 이제 기차역에서 힘들게 줄 서지 마세요. 스마트폰으로 기차표를 예매하고 어르신 경로 할인까지 챙기는 쉬운 방법을 친절하게 설명해 드릴게요. 편리하게 여행을 떠나보세요.
 image: https://picsum.photos/1200/630?random=48
 source: 한국철도공사
 sourceUrl: https://www.letskorail.com

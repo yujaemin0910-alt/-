@@ -1,7 +1,7 @@
 ---
 title: 무릎·허리 아픈 어르신을 위한 건강보험 지원 받는 방법
 date: 2026년 4월 24일
-description: 무릎과 허리 아픈 어르신을 위해서 건강보험 지원 제도와 의료비 절하는 방법을 상세히 안내합니다.
+description: 무릎이나 허리가 아파 고생하시는 어르신들, 병원비 걱정 없이 치료받으세요. 건강보험에서 지원하는 수술비와 물리치료 혜택을 받는 법을 상냥하게 안내해 드립니다.
 image: https://picsum.photos/1200/630?random=39
 source: 국민건강보험공단
 sourceUrl: https://www.nhis.or.kr

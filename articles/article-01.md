@@ -1,7 +1,7 @@
 ---
 title: 60대라면 꼭 알아야 할 2026년 복지 변화 5가지
 date: 2026년 4월 1일
-description: 기초연금 인상, 일자리 확대 등 2026년부터 시행되는 시니어 핵심 복지 혜택 5가지를 상세히 안내합니다.
+description: 2026년부터 기초연금이 월 최대 40만 원으로 오르고 일자리도 더 많아집니다. 어르신들께 꼭 필요한 5가지 핵심 혜택을 친절하게 알려드릴게요. 지금 바로 확인해 보세요.
 image: https://picsum.photos/1200/630?random=11
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

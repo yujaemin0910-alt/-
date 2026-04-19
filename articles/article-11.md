@@ -1,7 +1,7 @@
 ---
 title: 집 근처에서 무료로 즐기는 취미 교실
 date: 2026년 4월 4일
-description: 노인복지관과 주민센터에서 운영하는 무료 취미 프로그램에 대해 안내드립니다.
+description: 집 근처 복지관에서 무료로 즐길 수 있는 재미있는 취미 교실을 소개합니다. 서예부터 바둑까지 활력을 불어넣어 줄 다양한 프로그램을 지금 확인하고 즐거운 시간을 보내세요.
 image: https://picsum.photos/1200/630?random=15
 source: 한국노인인력개발원
 sourceUrl: https://www.kordi.or.kr

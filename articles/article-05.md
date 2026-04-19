@@ -1,7 +1,7 @@
 ---
 title: 어르신 스마트폰, 글씨 크게 보는 3가지 방법
 date: 2026년 4월 5일
-description: 스마트폰 사용이 낯선 시니어분들을 위해 꼭 알아두면 좋은 유용한 기능들을 소개합니다.
+description: 스마트폰 글씨가 너무 작아 보기 힘드셨죠? 설정 하나로 글씨를 큼직하게 키우고 편리하게 사용하는 쉬운 방법을 알려드립니다. 이제 자녀 도움 없이도 편하게 화면을 보세요.
 image: https://picsum.photos/1200/630?random=15
 source: 과학기술정보통신부
 sourceUrl: https://www.msit.go.kr

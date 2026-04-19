@@ -1,7 +1,7 @@
 ---
 title: 2026년 만 65세 이상 무임 교통카드 발급 및 이용 안내
 date: 2026년 3월 25일
-description: 만 65세 이상 시니어를 위한 지하철 무임승차 교통카드, 발급 방법과 이용 혜택을 안내드립니다.
+description: 만 65세 이상이라면 지하철 무임승차 등 교통 혜택을 누릴 수 있습니다. 교통카드 발급 방법과 이용 팁을 친절히 알려드릴 테니, 이제 편리하게 이동하며 여가를 즐기세요.
 image: https://picsum.photos/1200/630?random=18
 source: 보건복지부, 국토교통부
 sourceUrl: https://www.mohw.go.kr

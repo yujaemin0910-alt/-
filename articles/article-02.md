@@ -1,7 +1,7 @@
 ---
 title: 2026년 국가건강검진, 반드시 받아야 할 이유와 주의사항
 date: 2026년 4월 4일
-description: 무료로 제공되는 국가건강검진, 2026년 검진 대상자 확인 방법부터 주의사항까지 안내드립니다.
+description: 2026년 국가건강검진 대상자인지 확인해 보셨나요? 무료 검진으로 질병을 조기에 발견하고 건강을 지키는 법을 알기 쉽게 설명해 드립니다. 잊지 말고 꼭 받으세요.
 image: https://picsum.photos/1200/630?random=12
 source: 국민건강보험공단
 sourceUrl: https://www.nhis.or.kr

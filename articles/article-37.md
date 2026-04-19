@@ -1,7 +1,7 @@
 ---
 title: 치매 초기 증상 체크리스트와 치매안심센터 이용 방법
 date: 2026년 4월 20일
-description: 건망증과 치매는 다릅니다. 치매 초기 증상 10가지를 확인하고, 전국 치매안심센터에서 무료 검진을 받아보세요.
+description: 기억력이 예전 같지 않아 걱정되신다면 치매 초기 증상 체크리스트로 확인해 보세요. 치매안심센터에서 제공하는 무료 서비스와 이용 방법을 상냥하게 안내해 드립니다.
 image: https://picsum.photos/1200/630?random=51
 source: 중앙치매센터
 sourceUrl: https://www.nid.or.kr

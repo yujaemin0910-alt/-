@@ -1,7 +1,7 @@
 ---
 title: 집에서 전문가 돌봄받는 통합돌봄 서비스 시행
 date: 2026년 4월 4일
-description: 병원 대신 의사 간호사 요양보호사가 집으로 방문하는 통합돌봄 서비스에 대해 안내드립니다.
+description: 병원 가기 힘드실 때 의사와 간호사가 직접 댁으로 찾아가는 돌봄 서비스를 이용해 보세요. 집에서 편안하게 전문가의 도움을 받는 통합돌봄 신청 방법을 친절히 안내해 드립니다.
 image: https://picsum.photos/1200/630?random=12
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

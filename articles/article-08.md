@@ -1,7 +1,7 @@
 ---
 title: 전기요금 절약과 에너지 캐시백 제도
 date: 2026년 4월 4일
-description: 전기요금 절약 방법과 절약한 만큼 환급받는 에너지 캐시백 제도 신청 방법을 안내드립니다.
+description: 전기를 아낀 만큼 현금으로 돌려받는 에너지 캐시백 제도를 아시나요? 전기요금 부담을 덜어주는 알뜰한 절약 방법과 신청 경로를 쉽게 설명해 드릴게요. 꼭 확인해 보세요.
 image: https://picsum.photos/1200/630?random=19
 source: 한국전력공사
 sourceUrl: https://www.kepco.co.kr

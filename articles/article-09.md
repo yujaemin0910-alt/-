@@ -1,7 +1,7 @@
 ---
 title: 기초연금 신청하지 않으면 받을 수 없습니다
 date: 2026년 4월 4일
-description: 기초연금은 자동 지급이 아닌 신청 필수라는 점과 신청 방법, 대상 기준 등을 안내드립니다.
+description: 기초연금은 반드시 신청해야만 받을 수 있습니다. 월 최대 40만 원의 소중한 혜택을 놓치지 않도록 신청 기준과 절차를 상냥하게 알려드릴게요. 늦기 전에 지금 바로 신청해 보세요.
 image: https://picsum.photos/1200/630?random=11
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

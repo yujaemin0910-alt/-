@@ -1,7 +1,7 @@
 ---
 title: 우리가 몰랐던 티백의 배신 - 몸속 미세플라스틱 줄이는 황금 습관 3가지
 date: 2026년 4월 20일
-description: 일상 속 미세플라스틱의 위험과 예방 방법을 안내합니다.
+description: 우리가 즐겨 마시는 티백 차에서도 미세플라스틱이 나올 수 있다는 사실, 알고 계셨나요? 건강을 위해 미세플라스틱을 줄이는 3가지 황금 습관을 친절하게 알려드릴게요.
 image: https://picsum.photos/1200/630?random=46
 source: 환경부
 sourceUrl: https://www.me.go.kr

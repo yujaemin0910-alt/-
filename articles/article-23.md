@@ -1,7 +1,7 @@
 ---
 title: 보이스피싱 당했을 때, 즉시해야 할 7가지
 date: 2026년 4월 22일
-description: 보이스피싱했을 때 즉시에 해야 할 7가지 방법과 대응절차를 상세히 안내합니다.
+description: 보이스피싱 범죄로부터 소중한 재산을 지키는 대처법을 다시 한번 꼼꼼히 정리해 드립니다. 어르신들이 꼭 기억해야 할 7가지 행동 요령을 친절하고 상세하게 설명해 드릴게요.
 image: https://picsum.photos/1200/630?random=37
 source: 경찰청
 sourceUrl: https://www.police.go.kr

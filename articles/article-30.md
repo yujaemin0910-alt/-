@@ -1,7 +1,7 @@
 ---
 title: 어르기 대상 사기 유형 TOP 10과 예방법
 date: 2026년 4월 29일
-description: 어르기 어른들을 대상으로 한 사기 유형 10가지와 예방법을 상세히 안내합니다.
+description: 어르신을 노리는 나쁜 사기꾼들의 수법 10가지와 예방법을 꼼꼼히 알려드립니다. 소중한 재산을 안전하게 지키실 수 있도록 상냥하고 자세하게 설명해 드릴 테니 꼭 확인하세요.
 image: https://picsum.photos/1200/630?random=44
 source: 경찰청, 금융감독원
 sourceUrl: https://www.police.go.kr

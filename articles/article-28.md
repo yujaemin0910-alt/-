@@ -1,7 +1,7 @@
 ---
 title: 경로당 이용 방법과 프로그램 총정리
 date: 2026년 4월 27일
-description: 경로당 이용 방법과 프로그램 내용을 상세히 안내합니다.
+description: 집 근처 경로당에서 친구들도 만나고 재미있는 프로그램도 즐겨보세요. 경로당 이용 방법부터 식사 지원, 문화 활동까지 어르신을 위한 알찬 정보들을 상세히 안내해 드립니다.
 image: https://picsum.photos/1200/630?random=42
 source: 보건복지부
 sourceUrl: https://www.mohw.go.kr

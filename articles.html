@@ -157,9 +157,11 @@
             <button class="category-tab" onclick="filterCategory('work')">일자리</button>
             <button class="category-tab" onclick="filterCategory('transport')">교통·요금</button>
             <button class="category-tab" onclick="filterCategory('digital')">디지털</button>
+            <button class="category-tab" onclick="filterCategory('etc')">기타</button>
         </div>
 
         <div id="articlesList" class="articles-list">
+            <!-- 최신 상세 줄글 기사 (54-40) -->
             <article-card 
                 image="https://picsum.photos/seed/medical54/800/600"
                 title="2026년 노인 의료비 본인부담 경감 제도" 
@@ -196,279 +198,344 @@
                 data-category="health">
             </article-card>
             <article-card 
-                image="https://picsum.photos/seed/safety/800/600"
-                title="독거노인 안전 확인 서비스" 
-                description="홀로 사시는 어르신을 위해 국가에서 직접 안부를 확인합니다. 긴급 상황 발생 시 119와 가족에게 자동으로 연락됩니다."
-                link="/article.html?id=article-53"
-                data-category="etc">
+                image="https://picsum.photos/seed/phone49/800/600"
+                title="어르신 스마트폰 병원 예약 방법" 
+                description="전화 대기 없이 1분 만에 끝내는 네이버·카카오톡 병원 예약 가이드! 디지털 세상에서 더 편하게 진료받으세요."
+                link="/article.html?id=article-49"
+                data-category="digital">
             </article-card>
             <article-card 
-                image="https://picsum.photos/seed/energy/800/600"
-                title="에너지바우처 신청, 냉난방비 지원받으세요" 
-                description="정부에서 전기요금과 도시가스를 지원해 드립니다. 신청하지 않으면 받을 수 없는 제도이므로 꼭 신청하세요."
-                link="/article.html?id=article-52"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/dementia/800/600"
-                title="치매 초기 증상 체크리스트 10가지" 
-                description="건망증과 치매는 다릅니다. 치매 초기 증상 10가지를 확인하고 치매안심센터 이용 방법을 알려줍니다."
-                link="/article.html?id=article-51"
+                image="https://picsum.photos/seed/safety48/800/600"
+                title="홀로 사는 어르신 고독사 예방 서비스" 
+                description="국가가 약속하는 따뜻한 안전망! 스마트 센서와 안부 전화로 어르신의 안전을 24시간 지켜드립니다."
+                link="/article.html?id=article-48"
                 data-category="health">
             </article-card>
             <article-card 
-                image="https://picsum.photos/seed/scam/800/600"
-                title="보이스피싱 당했을 때 반드시 해야 할 5가지" 
-                description="전화로 돈이 사라질 수 있습니다. 보이스피싱 피해 시 반드시 해야 할 절차 5가지를 안내합니다."
-                link="/article.html?id=article-50"
+                image="https://picsum.photos/seed/scam47/800/600"
+                title="어르신 대상 사기 유형 TOP 5와 예방법" 
+                description="보이스피싱부터 허위 광고까지, 내 소중한 재산을 노리는 범죄를 막는 확실한 방법을 알려드립니다."
+                link="/article.html?id=article-47"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/housing46/800/600"
+                title="주거급여 신청 방법 — 월세·집수리 지원" 
+                description="소득 기준만 맞으면 자녀와 상관없이 혜택! 월세 지원부터 최대 1,241만 원 집 수리비까지 꼼꼼히 확인하세요."
+                link="/article.html?id=article-46"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/health45/800/600"
+                title="2026년 국가건강검진 대상자 및 예약 가이드" 
+                description="올해는 짝수 연도 출생자 검진의 해! 무료 검진 대상 확인부터 병원 예약 방법까지 상세 안내."
+                link="/article.html?id=article-45"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/work44/800/600"
+                title="2026년 어르신 일자리 신청 완벽 가이드" 
+                description="용돈도 벌고 건강도 챙기는 활기찬 노후! 2026년 달라진 노인 일자리 종류와 신청 방법을 상세히 안내합니다."
+                link="/article.html?id=article-44"
+                data-category="work">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/joint43/800/600"
+                title="어르신 무릎·허리 건강보험 지원 혜택" 
+                description="무릎 인공관절 수술부터 MRI 검사까지, 비싼 병원비 걱정을 덜어주는 건강보험 제도를 확인하세요."
+                link="/article.html?id=article-43"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/livelihood42/800/600"
+                title="기초생활수급자 신청 방법 및 혜택 총정리" 
+                description="생계·의료·주거급여 자격 요건과 신청 절차를 아주 쉽게 설명해 드립니다."
+                link="/article.html?id=article-42"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/dental41/800/600"
+                title="틀니·임플란트 건강보험 적용 안내" 
+                description="만 65세 이상이라면 치과 치료비 70%를 지원받을 수 있습니다. 평생 2개 임플란트 혜택을 놓치지 마세요."
+                link="/article.html?id=article-41"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/care40/800/600"
+                title="노인 맞춤 돌봄 서비스 신청 방법" 
+                description="혼자서도 안심하고 건강하게! 안부 확인부터 가사 지원까지 제공하는 국가 돌봄 서비스를 신청하세요."
+                link="/article.html?id=article-40"
+                data-category="health">
+            </article-card>
+
+            <!-- 이전 기사들 복구 (39-01) -->
+            <article-card 
+                image="https://picsum.photos/seed/medical/800/600"
+                title="무릎·허리 건강, 건강보험이 도와주는 치료비 확인" 
+                description="건강보험 적용 진료비 지원제도와 신청 방법을 안내합니다."
+                link="/article.html?id=article-39"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/delivery/800/600"
+                title="스마트폰으로 배달 앱으로 편리하게 주문하는 방법" 
+                description="배달 앱 사용법과 할인 혜택을 알려드립니다."
+                link="/article.html?id=article-38"
+                data-category="digital">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/phone/800/600"
+                title="보이스피싱 대처법 7가지, 어르신도 반드시 확인" 
+                description="전화 사기 피해 예방 방법을 상세 안내합니다."
+                link="/article.html?id=article-37"
                 data-category="etc">
             </article-card>
             <article-card 
                 image="https://picsum.photos/seed/nurse/800/600"
-                title="장기요양등급 신청, 집에서 돌봄받는 첫걸음" 
-                description="장기요양등급의 신청 방법과 등급별 혜택, 필요한 준비물을 상세 안내합니다."
-                link="/article.html?id=article-49"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/senior/800/600"
-                title="60대라면 꼭 알아야 할 2026년 복지 변화 5가지" 
-                description="기초연금 인상부터 일자리 확대까지,올해부터 달라지는"택을 정리했습니다."
-                link="/article.html?id=article-1"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/health/800/600"
-                title="국가건강검진, 꼭 받아야 할 이유와 주의사항" 
-                description="무료로 제공되는 국가건강검진, 2026년 검진 대상자 확인 방법부터 주의사항까지 안내합니다."
-                link="/article.html?id=article-2"
+                title="장기요양등급 신청: A부터 Z까지" 
+                description="장기요양보험 등급 신청부터 판정까지 전 과정 안내합니다."
+                link="/article.html?id=article-36"
                 data-category="health">
             </article-card>
             <article-card 
                 image="https://picsum.photos/seed/pension/800/600"
-                title="기초연금, 신청 대상과 수령액 확인 방법" 
-                description="기초연금 수급 조건과 소득인정액 기준, 신청 방법과 예상 수령액을 안내합니다."
-                link="/article.html?id=article-3"
+                title="기초연금 이의신청, 거절당해도 다시 신청하는 방법" 
+                description="기초연금을 거절당하셨나요? 이의신청 방법과 절차를 안내합니다."
+                link="/article.html?id=article-35"
                 data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/work/800/600"
-                title="2026년 노인 일자리 신청, 늦기 전에 서두르세요" 
-                description="활기찬 노후를 위한 정부 지원 일자리, 신청 기간과 장소를 확인하세요."
-                link="/article.html?id=article-4"
-                data-category="work">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/phone/800/600"
-                title="어르신 스마트폰, 글씨 크게 보는 3가지 방법" 
-                description="눈이 침침하시죠? 스마트폰을 더 편하게 쓰는 쉬운 모드 설정법을 알려드립니다."
-                link="/article.html?id=article-5"
-                data-category="digital">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/hobby/800/600"
-                title="무료로 즐기는 취미 교실, 집 근처 어디 있을까?" 
-                description="서예, 댄스, 노래 교실까지! 어르신을 위한 무료 여가 활동 정보를 모았습니다."
-                link="/article.html?id=article-6"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/eye/800/600"
-                title="노안을 늦추는 최고의 생활 습관 5가지" 
-                description="소중한 시력을 지키기 위해 오늘부터 실천해야 할 5가지 약속입니다."
-                link="/article.html?id=article-7"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/subway/800/600"
-                title="무임 교통카드, 만 65세 이상이라면 발급받으세요" 
-                description="만 65세라면 누구나 가능! 발급 신청 방법부터 혜택까지 정리했습니다."
-                link="/article.html?id=article-8"
-                data-category="transport">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/hospital/800/600"
-                title="어르신을 위한 건강 관리, 꼭 알아야 할 건강 상식" 
-                description="매일 실천하면 좋은 건강 습관과 정기 건강검진의 중요성에 대해 알아봅니다."
-                link="/article.html?id=article-9"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/food/800/600"
-                title="우리나라 먹거리 역대급 수출 기록, 코스피 식품주 전망" 
-                description="전 세계가 우리 먹거리에 푹 빠졌습니다! 역대급 수출 기록 소식과 주식 전망을 확인하세요."
-                link="/article.html?id=article-10"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/pension/800/600"
-                title="기초연금, 신청하지 않으면 받을 수 없습니다" 
-                description="기초연금은 신청해야 받을 수 있습니다. 자동으로 주는 돈이 아니라서 대상인데도 못 받는 분들이 많습니다."
-                link="/article.html?id=article-11"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/healthcare/800/600"
-                title="의료·요양·돌봄 통합서비스, 2026년 3월부터 전국 시행" 
-                description="집에서 돌봄을 받을 수 있는 통합서비스가 전국 시행됩니다. 신청 방법과 제공 서비스를 안내합니다."
-                link="/article.html?id=article-12"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/care/800/600"
-                title="돌봄통합지원법 시행에 따른 지원 대상 및 제도의 변화" 
-                description="돌봄통합지원법의 시행에 따른 지원 대상자 선정 기준과 제도의 주요 변화를 안내합니다."
-                link="/article.html?id=article-13"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/industry/800/600"
-                title="자동차 수출 물류 위기 및 정부의 산업 지원 방안" 
-                description="중동 분쟁으로 인한 자동차 수출 물류 위기와 정부의 28조 원 규모 산업 지원 방안에 대해 알아봅니다."
-                link="/article.html?id=article-14"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/pension2/800/600"
-                title="노후 준비, 연금제도개편 핵심 정리" 
-                description="국민연금 개혁안에 대한 주요 내용과 노후에 받을 수 있는 연금액 확인 방법을 안내합니다."
-                link="/article.html?id=article-15"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/dental/800/600"
-                title="어르신을 위한 틀니·임플란트 지원 사업 안내" 
-                description="만 65세 이상 어르신의 구강 건강을 위한 틀니 및 임플란트 비용 지원 제도에 대해 알아봅니다."
-                link="/article.html?id=article-16"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/bank/800/600"
-                title="시니어 맞춤 금융 상품, 지금 주목해야 할 이유는?" 
-                description="어르신을 위한 은행 상품과 저축 방법, 꼭 알아야 할 금융 상식을 정리합니다."
-                link="/article.html?id=article-17"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/travel/800/600"
-                title="어르신을 위한 여행 할인, 이렇게 받으세요" 
-                description="경향적 관광지 입장료 할인부터 숙박권까지, 어르신 여행우대정책 모음입니다."
-                link="/article.html?id=article-18"
-                data-category="transport">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/home/800/600"
-                title="노인 주거 지원 정책, 내 상황에 맞는 건 어떤 것?" 
-                description="공공임대주택부터 개조 지원까지, 어르신을 위한 주거 지원 제도를 자세한 안내합니다."
-                link="/article.html?id=article-19"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/medicine/800/600"
-                title="희귀질환 치료제 관세·부가세 면제, 환자 부담 줄어든다" 
-                description="희귀난치성질환 치료제 관세와 부가세 면제 혜택의 주요 내용과 신청 방법을 안내드립니다."
-                link="/article.html?id=article-20"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/sports/800/600"
-                title="집 근처에서 공짜로 운동하세요! 2026 어르신 스포츠강좌 본격 시작" 
-                description="만 65세 이상 어르신을 위한 무료 스포츠강좌 프로그램의 신청 방법과 지역별 프로그램을 안내드립니다."
-                link="/article.html?id=article-21"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/homecare/800/600"
-                title="이제 병원 대신 집에서 치료받으세요! 전국 통합돌봄 27일부터 전격 시행" 
-                description="지역사회 통합돌봄의 전국 시행으로 집에서 전문가의 돌봄을 받는 방법과 신청 방법을 안내드립니다."
-                link="/article.html?id=article-22"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/food/800/600"
-                title="먹는 위고비라고 속지 마세요! 식약처 식품부당행위긴급대응단 전격 출범" 
-                description="허위 건강 광고 단속을 위한 식품부당행위긴급대응단의 설립 배경과 활동 내용을 안내드립니다."
-                link="/article.html?id=article-23"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/family/800/600"
-                title="달력에 의사가 오는 날 표시한 할머니… 통합돌봄이 바꾼 감동의 일상" 
-                description="강원도 횡성군에서 진행 중인 지역사회 통합돌봄 시범사업의 감동적인 현장 이야기와 전국 시행 정보를 안내드립니다."
-                link="/article.html?id=article-24"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/shop/800/600"
-                title="사장님들 주목! 2026년 달라지는 소상공인 지원 정책" 
-                description="매출 확대, 신속한 회복, 정책 지원체계 개선을 통한 2026년 소상공인 정책 방향을 안내드립니다."
-                link="/article.html?id=article-25"
-                data-category="work">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/safety/800/600"
-                title="일하다 다치면 국가가 책임집니다… 전 국민 산재보험 시대 개막" 
-                description="예술인, 위험 업종 자영업자 등 전 국민 산재보험 확대 정책과 관련해 안내드립니다."
-                link="/article.html?id=article-26"
-                data-category="work">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/holiday/800/600"
-                title="5월 1일 노동절, 63년 만에 전 국민이 쉬는 '법정 공휴일' 승격" 
-                description="2026년부터 공무원·교사 포함 모든 국민이 유급 휴무를 받는 노동절 공휴일 지정 정책과 일상생활 유의사항을 안내드립니다."
-                link="/article.html?id=article-27"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/town/800/600"
-                title="지방소멸 대응 범부처 지역혁신 프로젝트 가동… '지역이 직접 설계하고 정부가 돕는다'" 
-                description="중기부·법무부 등 5개 부처 합동으로 가동되는 지역혁신 프로젝트의 4대 분야 지원 전략과 맞춤형 지원 내용을 안내드립니다."
-                link="/article.html?id=article-28"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/dementia/800/600"
-                title="깜빡하는 건망증일까, 치매일까? '치매안심센터'가 어르신의 기억을 지킵니다" 
-                description="전국 256개 치매안심센터에서 무료 검진부터 인지 재활까지 종합 지원하고 있습니다. 조기 발견이 완화의 핵심입니다."
-                link="/article.html?id=article-29"
-                data-category="health">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/pension/800/600"
-                title="기초연금, 직접 신청해보니 이런 점은 꼭 알아두세요!" 
-                description="기초연금을 직접 신청하면서 겪은 과정을 공유합니다. 신청 전 반드시 알아두어야 할 사항들을 정리했습니다."
-                link="/article.html?id=article-30"
-                data-category="pension">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/oil/800/600"
-                title="고유가 피해지원금 27일부터 지급... 어르신·취약계층 최대 60만 원" 
-                description="고유가 피해지원금이 4월 27일부터 지급됩니다. 소득과 지역에 따라 10만~60만 원 지원, 신청 시기별 요일제 확인과 스미싱 주의사항을 안내합니다."
-                link="/article.html?id=article-31"
-                data-category="etc">
-            </article-card>
-            <article-card 
-                image="https://picsum.photos/seed/shopping/800/600"
-                title="최대90% 할인 '동행축제' 개막... 어르신 장바구니 부담 덜어준다" 
-                description="농축산물 최대 60%, 의류·주방용품 최대 90% 할인! 5월 초 온누리상품권 10% 할인, 지역 축제와 연계한 즐길 거리까지 풍성한 혜택을 안내합니다."
-                link="/article.html?id=article-32"
-                data-category="etc">
             </article-card>
             <article-card 
                 image="https://picsum.photos/seed/electricity/800/600"
-                title="봄·가을 주말 낮 전기요금 50% 반값! 변경된 요금제 및 전기차 할인 총정리" 
-                description="전기요금 개편안이 4월 16일부터 시행됩니다. 낮 시간대 요금은 싸지고 저녁은 비싸게 변함, 봄·가을 주말 낮에는 최대 50% 할인, 전기차 충전 할인 정보도 안내드립니다."
+                title="봄·가을 주말 낮 전기요금 50% 반값 혜택" 
+                description="변경된 요금제 및 전기차 할인 정보를 총정리해 드립니다."
                 link="/article.html?id=article-33"
                 data-category="etc">
             </article-card>
             <article-card 
-                image="https://picsum.photos/seed/appeal/800/600"
-                title="기초연금 이의신청, 거절당해도 다시 신청하는 방법" 
-                description="기초연금을 거절당하셨나요? 이의신청 방법과 절차, 다시 신청하는 방법을 안내합니다."
-                link="/article.html?id=article-35
+                image="https://picsum.photos/seed/shopping/800/600"
+                title="최대 90% 할인 '동행축제' 개막 소식" 
+                description="어르신 장바구니 부담을 덜어주는 다양한 할인 혜택을 확인하세요."
+                link="/article.html?id=article-32"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/oil/800/600"
+                title="고유가 피해지원금 최대 60만 원 지급" 
+                description="어르신 및 취약계층을 위한 지원금 신청 시기 및 방법을 안내합니다."
+                link="/article.html?id=article-31"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension/800/600"
+                title="기초연금 직접 신청 후기 및 주의사항" 
+                description="직접 신청해보니 알게 된 꿀팁과 꼭 알아두어야 할 사항들입니다."
+                link="/article.html?id=article-30"
                 data-category="pension">
             </article-card>
-            </div>
+            <article-card 
+                image="https://picsum.photos/seed/dementia/800/600"
+                title="깜빡하는 건망증일까, 치매일까? '치매안심센터' 가이드" 
+                description="전국 256개 치매안심센터에서 제공하는 다양한 지원 서비스를 소개합니다."
+                link="/article.html?id=article-29"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/region/800/600"
+                title="지방소멸 대응 지역혁신 프로젝트 가동" 
+                description="지역이 직접 설계하고 정부가 돕는 새로운 지원 전략을 소개합니다."
+                link="/article.html?id=article-28"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/celebration/800/600"
+                title="5월 1일 노동절, 법정 공휴일 승격 소식" 
+                description="2026년부터 모든 국민이 유급 휴무를 받는 노동절 정책을 안내합니다."
+                link="/article.html?id=article-27"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/work/800/600"
+                title="전 국민 산재보험 시대 개막" 
+                description="일하다 다치면 국가가 책임집니다. 산재보험 확대 정책을 확인하세요."
+                link="/article.html?id=article-26"
+                data-category="work">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/shop/800/600"
+                title="2026년 달라지는 소상공인 지원 정책" 
+                description="사장님들 주목! 매출 확대와 신속한 회복을 돕는 정책을 안내합니다."
+                link="/article.html?id=article-25"
+                data-category="work">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/family/800/600"
+                title="통합돌봄이 바꾼 감동의 일상 사례" 
+                description="달력에 의사 선생님 오는 날을 표시한 할머니의 이야기를 소개합니다."
+                link="/article.html?id=article-24"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/food/800/600"
+                title="식품부당행위 긴급대응단 출범" 
+                description="허위 건강 광고에 속지 마세요! 식약처의 새로운 대응 활동을 안내합니다."
+                link="/article.html?id=article-23"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/homecare/800/600"
+                title="병원 대신 집에서 치료받는 전국 통합돌봄" 
+                description="27일부터 전격 시행되는 통합돌봄 서비스 신청 방법을 알려드립니다."
+                link="/article.html?id=article-22"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/sports/800/600"
+                title="집 근처에서 공짜로 운동하는 스포츠강좌" 
+                description="만 65세 이상 어르신을 위한 무료 스포츠 프로그램을 확인하세요."
+                link="/article.html?id=article-21"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/medicine/800/600"
+                title="희귀질환 치료제 관세·부가세 면제" 
+                description="환자 부담을 줄여주는 세제 혜택과 신청 방법을 안내합니다."
+                link="/article.html?id=article-20"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/home/800/600"
+                title="어르신 맞춤형 주거 지원 정책 가이드" 
+                description="공공임대주택부터 집 개조 지원까지 내게 맞는 정책을 찾아보세요."
+                link="/article.html?id=article-19"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/travel/800/600"
+                title="어르신을 위한 여행 할인 혜택 모음" 
+                description="입장료 할인부터 숙박권까지 여행우대정책을 한눈에 확인하세요."
+                link="/article.html?id=article-18"
+                data-category="transport">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/bank/800/600"
+                title="시니어 맞춤 금융 상품 주목할 이유" 
+                description="은행 상품과 저축 방법, 꼭 알아야 할 금융 상식을 정리했습니다."
+                link="/article.html?id=article-17"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/dental/800/600"
+                title="틀니·임플란트 지원 사업 상세 안내" 
+                description="만 65세 이상 어르신의 구강 건강을 위한 지원 제도를 설명합니다."
+                link="/article.html?id=article-16"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension2/800/600"
+                title="노후 준비 연금제도개편 핵심 정리" 
+                description="국민연금 개혁안과 받을 수 있는 연금액 확인 방법을 안내합니다."
+                link="/article.html?id=article-15"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/industry/800/600"
+                title="자동차 수출 물류 위기 및 산업 지원 방안" 
+                description="경제 동향과 정부의 산업 지원 대책에 대해 알아봅니다."
+                link="/article.html?id=article-14"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/care/800/600"
+                title="돌봄통합지원법 시행에 따른 제도의 변화" 
+                description="지원 대상자 선정 기준과 제도의 주요 변화를 상세히 안내합니다."
+                link="/article.html?id=article-13"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/healthcare/800/600"
+                title="의료·요양·돌봄 통합서비스 전국 시행" 
+                description="2026년 3월부터 시작되는 통합서비스 내용을 확인하세요."
+                link="/article.html?id=article-12"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension/800/600"
+                title="기초연금 신청하지 않으면 못 받습니다" 
+                description="자동으로 주는 돈이 아니기에 대상자라면 꼭 직접 신청해야 합니다."
+                link="/article.html?id=article-11"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/food/800/600"
+                title="먹거리 역대급 수출 기록과 식품주 전망" 
+                description="우리 먹거리의 세계적 인기와 관련 주식 정보를 소개합니다."
+                link="/article.html?id=article-10"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/hospital/800/600"
+                title="어르신 건강 관리 핵심 건강 상식" 
+                description="매일 실천하면 좋은 습관과 검진의 중요성을 알려드립니다."
+                link="/article.html?id=article-09"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/subway/800/600"
+                title="만 65세 무임 교통카드 발급 가이드" 
+                description="무료 지하철 이용을 위한 카드 발급 방법을 정리했습니다."
+                link="/article.html?id=article-08"
+                data-category="transport">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/eye/800/600"
+                title="노안을 늦추는 최고의 생활 습관 5가지" 
+                description="소중한 시력을 지키기 위해 오늘부터 실천해야 할 약속입니다."
+                link="/article.html?id=article-07"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/hobby/800/600"
+                title="집 근처 무료 취미 교실 정보" 
+                description="서예, 댄스 등 어르신을 위한 무료 여가 활동 정보를 모았습니다."
+                link="/article.html?id=article-06"
+                data-category="etc">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/phone/800/600"
+                title="어르신 스마트폰 글씨 크게 보는 법" 
+                description="눈이 침침하시죠? 스마트폰을 편하게 쓰는 설정법을 알려드립니다."
+                link="/article.html?id=article-05"
+                data-category="digital">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/work/800/600"
+                title="2026년 노인 일자리 신청 안내" 
+                description="활기찬 노후를 위한 정부 지원 일자리 정보를 확인하세요."
+                link="/article.html?id=article-04"
+                data-category="work">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/pension/800/600"
+                title="기초연금 신청 대상과 수령액 확인" 
+                description="수급 조건과 예상 수령액 확인 방법을 상세히 안내합니다."
+                link="/article.html?id=article-03"
+                data-category="pension">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/health/800/600"
+                title="국가건강검진 꼭 받아야 할 이유" 
+                description="무료 건강검진 대상자 확인 및 주의사항을 안내합니다."
+                link="/article.html?id=article-02"
+                data-category="health">
+            </article-card>
+            <article-card 
+                image="https://picsum.photos/seed/senior/800/600"
+                title="2026년 꼭 알아야 할 복지 변화 5가지" 
+                description="올해부터 달라지는 어르신 혜택 핵심 내용을 정리했습니다."
+                link="/article.html?id=article-01"
+                data-category="pension">
+            </article-card>
+        </div>
 
         <div id="pagination" class="pagination"></div>
 
@@ -538,10 +605,9 @@
         function filterCategory(category) {
             currentCategory = category;
             document.querySelectorAll('.category-tab').forEach(tab => {
-                tab.classList.toggle('active', tab.textContent === getCategoryName(category) || 
-                    (category === 'all' && tab.textContent === '전체'));
+                const catName = getCategoryName(category);
+                tab.classList.toggle('active', tab.textContent === catName);
             });
-            filterArticles();
             showPage(1);
         }
 
@@ -554,26 +620,7 @@
         }
 
         function filterArticles() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('article-card');
-            let visibleCount = 0;
-
-            cards.forEach(card => {
-                const title = card.getAttribute('title') || '';
-                const description = card.getAttribute('description') || '';
-                const category = card.getAttribute('data-category') || '';
-                
-                const matchesSearch = title.toLowerCase().includes(searchTerm) || 
-                                     description.toLowerCase().includes(searchTerm);
-                const matchesCategory = currentCategory === 'all' || category === currentCategory;
-                
-                const shouldShow = matchesSearch && matchesCategory;
-                card.style.display = shouldShow ? '' : 'none';
-                if (shouldShow) visibleCount++;
-            });
-
-            document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
-            renderPagination(visibleCount, 1);
+            showPage(1);
         }
     </script>
 

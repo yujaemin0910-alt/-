@@ -57,4 +57,4 @@ sourceUrl: https://www.mohw.go.kr
 
 - 보건복지부 지역돌봄통합지원 안내: https://www.mohw.go.kr
 - 법제처 국가법령정보센터: https://www.law.go.kr
-- 국민건강보험공단 장기요양보험: https://www.longtermcare.or.kr
+- 국민건강보험공단 장기요양보험: https://www.longtermcare.또는.kr

@@ -58,4 +58,4 @@ sourceUrl: https://www.motie.go.kr
 
 - 산업통상자원부 정책 소식: https://www.motie.go.kr
 - 관세청 수출입 지원 안내: https://www.customs.go.kr
-- 한국무역보험공사: https://www.ksure.or.kr
+- 한국무역보험공사: https://www.ksure.또는.kr

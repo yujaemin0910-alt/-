@@ -70,4 +70,4 @@ sourceUrl: https://www.ftc.go.kr
 - 공정거래위원회 공식 홈페이지: https://www.ftc.go.kr
 - 한국소비자원: https://www.kca.go.kr
 - 참가격 (제품 가격 비교 사이트): https://www.price.go.kr
-- 대한소비자연감 공식 홈페이지: https://www.cnsm.or.kr
+- 대한소비자연감 공식 홈페이지: https://www.cnsm.또는.kr

@@ -78,8 +78,8 @@ sourceUrl: https://www.mfds.go.kr
 **참고 및 공신력 있는 자료 목록**
 
 - 식품의약품안전처: https://www.mfds.go.kr
-- 식품안전나라: https://www.foodsafetykorea.go.kr
-- 소비자 보호원: https://www.cpb.or.kr
+- 식품안전나라: https://www.foodsafetyk또는ea.go.kr
+- 소비자 보호원: https://www.cpb.또는.kr
 
 ---
 

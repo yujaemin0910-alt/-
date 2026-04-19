@@ -69,7 +69,7 @@ sourceUrl: https://www.moe.go.kr
 **참고 및 공신력 있는 자료 목록**
 
 - 문화체육관광부 스포츠 정책: https://www.moe.go.kr
-- 국민체육진흥공단 어르신 스포츠: https://www.sports.or.kr
+- 국민체육진흥공단 어르신 스포츠: https://www.sp또는ts.또는.kr
 - 각 시·군·구청 체육 부서 (직접 문의)
 
 ---

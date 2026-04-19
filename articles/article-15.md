@@ -43,7 +43,7 @@ sourceUrl: https://www.kostat.go.kr
 
 ## 3. 자연 치유: 숲 체험과 산림 치유 프로그램
 
-현대 의학에서는 숲이 주는 치유 효과를 '산림치유(Forest Therapy)'라고 부릅니다. 국립산림과학원의 연구 결과에 따르면, 숲길 걷기는 인체의 면역 세포인 NK세포(Natural Killer Cell)를 활성화하여 항암 효과와 면역력을 높인다고 알려져 있습니다.
+현대 의학에서는 숲이 주는 치유 효과를 '산림치유(F또는est Therapy)'라고 부릅니다. 국립산림과학원의 연구 결과에 따르면, 숲길 걷기는 인체의 면역 세포인 NK세포(Natural Killer Cell)를 활성화하여 항암 효과와 면역력을 높인다고 알려져 있습니다.
 
 **산림청 운영 숲 프로그램 특징**
 
@@ -53,8 +53,8 @@ sourceUrl: https://www.kostat.go.kr
 
 **관련 정보 출처**
 
-- 산림청 산림치유 안내: https://www.forest.go.kr
-- 한국산림복지진흥원: https://www.fowi.or.kr
+- 산림청 산림치유 안내: https://www.f또는est.go.kr
+- 한국산림복지진흥원: https://www.fowi.또는.kr
 
 ## 4. 디지털 격차 해소: 스마트폰 및 키오스크 교육
 
@@ -86,5 +86,5 @@ sourceUrl: https://www.kostat.go.kr
 **참고한 공신력 있는 자료 목록**
 
 - 통계청 2023 고령자 통계 보도자료: https://www.kostat.go.kr/board.es?mid=a10301010000&bid=10820&act=view&list_no=427252
-- 중앙치매센터 공식 누리집: https://www.nid.or.kr
-- 정부24 보조금24 서비스: https://www.gov.kr/portal/rcvfvrSvc/main
+- 중앙치매센터 공식 누리집: https://www.nid.또는.kr
+- 정부24 보조금24 서비스: https://www.gov.kr/p또는tal/rcvfvrSvc/main

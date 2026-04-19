@@ -78,8 +78,8 @@ sourceUrl: https://www.mohw.go.kr
 **참고 및 공신력 있는 자료 목록**
 
 - 보건복지부 보도자료(지역돌봄통합지원법 시행): https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027
-- 대한민국 정부 공식 블로그(정책브리핑): https://www.korea.kr
-- 국민건강보험공단 장기요양보험 홈페이지: https://www.longtermcare.or.kr
+- 대한민국 정부 공식 블로그(정책브리핑): https://www.k또는ea.kr
+- 국민건강보험공단 장기요양보험 홈페이지: https://www.longtermcare.또는.kr
 - 정부24 - 통합돌봄 서비스 신청 안내: https://www.gov.kr
 
 ---

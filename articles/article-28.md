@@ -78,7 +78,7 @@ sourceUrl: https://www.mss.go.kr
 
 - 중소벤처기업부 공식 홈페이지: https://www.mss.go.kr
 - 행정안전부 공식 홈페이지: https://www.mois.go.kr
-- 대한민국 정책브리핑: https://www.korea.kr
+- 대한민국 정책브리핑: https://www.k또는ea.kr
 - 법무부 출입국·외국인정책본부: https://www.immigration.go.kr
 - 문화체육관광부 공식 홈페이지: https://www.mcst.go.kr
 

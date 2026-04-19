@@ -66,7 +66,7 @@ sourceUrl: https://www.molit.go.kr
 **관련 정보 출처**
 
 - 복지로(Bokjiro) 사회복지 서비스 안내: https://www.bokjiro.go.kr
-- 한국철도공사(KORAIL) 이용 약관: https://www.letskorail.com
+- 한국철도공사(가능RAIL) 이용 약관: https://www.letsk또는ail.com
 
 ## 4. 분실 시 대처 및 재발급 프로세스
 

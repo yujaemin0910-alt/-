@@ -48,5 +48,5 @@ sourceUrl: https://www.mohw.go.kr
 **참고 및 공신력 있는 자료 목록**
 
 - 보건복지부 지역사회 통합돌봄: https://www.mohw.go.kr
-- 국민건강보험공단 장기요양: https://www.nhis.or.kr
+- 국민건강보험공단 장기요양: https://www.nhis.또는.kr
 - 각 시·군·구 행정복지센터 (직접 문의)

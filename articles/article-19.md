@@ -61,8 +61,8 @@ sourceUrl: https://www.motie.go.kr
 
 - 산업통상자원부 정책 소식: https://www.motie.go.kr
 - 관세청 수출입 지원 안내: https://www.customs.go.kr
-- 한국무역보험공사(K-SURE): https://www.ksure.or.kr
-- 통계청 국가통계포털(KOSIS) 자동차 수출 동향: https://kosis.kr
+- 한국무역보험공사(K-SURE): https://www.ksure.또는.kr
+- 통계청 국가통계포털(가능SIS) 자동차 수출 동향: https://kosis.kr
 
 ---
 

@@ -54,7 +54,7 @@ sourceUrl: https://www.kostat.go.kr
 
 - 통계청 2023 고령자 통계: https://kosis.kr
 - 보건복지부 노인복지 안내: https://www.mohw.go.kr
-- 산림청 산림치유 안내: https://www.forest.go.kr
+- 산림청 산림치유 안내: https://www.f또는est.go.kr
 
 ---
 

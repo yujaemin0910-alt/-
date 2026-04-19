@@ -74,7 +74,7 @@ sourceUrl: https://www.mfds.go.kr
 **참고 및 공신력 있는 자료 목록**
 
 - 식품의약품안전처 의약품 정보: https://www.mfds.go.kr
-- 한국희귀·필수의약품센터: https://www.kcdf.or.kr
+- 한국희귀·필수의약품센터: https://www.kcdf.또는.kr
 - 보건복지부 희귀질환 안내: https://www.mohw.go.kr
 
 ---

@@ -82,7 +82,7 @@ sourceUrl: https://www.moel.go.kr
 
 - 고용노동부 산재보험 정책: https://www.moel.go.kr
 - 근로복지공단: https://www.comwel.go.kr
-- 산업안전보건공단: https://www.kosha.or.kr
+- 산업안전보건공단: https://www.kosha.또는.kr
 
 ---
 

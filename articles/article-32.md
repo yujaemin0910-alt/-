@@ -67,7 +67,7 @@ sourceUrl: https://www.me.go.kr
 
 참고 문헌 및 자료 출처:
 
-캐나다 맥길 대학교 연구팀, Plastic Teabags Release Billions of Microplastics and Nanoplastics into Tea
+캐나다 맥길 대학교 연구팀, 티백에서 수십억 개의 미세플라스틱과 나노플라스틱이 배출된다는 연구 결과
 
 환경부 보도자료, 미세플라스틱으로부터 안전한 생활 가이드
 
